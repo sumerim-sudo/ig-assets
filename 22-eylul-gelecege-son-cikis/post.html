@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-Regular.ttf");font-weight:400}
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-Medium.ttf");font-weight:500}
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-Bold.ttf");font-weight:700}
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-ExtraBold.ttf");font-weight:800}
+:root{--blue:#2536DF;--blue2:#1A27B8;--lime:#CBF23E;--ink:#0C0C0C;--w:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#9aa0b5;font-family:"P",sans-serif;-webkit-font-smoothing:antialiased}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;margin:0 auto;
+  padding:66px 72px 62px;display:flex;flex-direction:column;background:var(--lime);color:var(--ink)}
+.slide.b{background:var(--blue);color:var(--w)}
+.wm{position:absolute;z-index:0;opacity:.085}
+.slide.b .wm{opacity:.16}
+.hd{display:flex;justify-content:space-between;align-items:center;font-size:23px;font-weight:600;letter-spacing:.01em;position:relative;z-index:6}
+.hd .r{font-weight:500;opacity:.72;text-transform:uppercase;letter-spacing:.14em;font-size:19px}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:34px;position:relative;z-index:5}
+.ft{display:flex;justify-content:space-between;align-items:flex-end;font-size:18px;font-weight:500;opacity:.68;position:relative;z-index:6;gap:24px}
+.ft .n{font-weight:700;opacity:1;white-space:nowrap}
+h1{font-size:96px;font-weight:800;line-height:.98;letter-spacing:-.03em}
+h2{font-size:74px;font-weight:800;line-height:1.03;letter-spacing:-.025em}
+h3{font-size:46px;font-weight:700;line-height:1.1;letter-spacing:-.02em}
+p{font-size:27px;line-height:1.45;font-weight:400}
+p.lead{font-size:31px;line-height:1.4;font-weight:500}
+.slide.b p{color:#EDEFFF}
+.lime{color:var(--lime)}.blu{color:var(--blue)}.wht{color:#fff}.mut{opacity:.74}
+.c{position:relative;display:inline-block;white-space:nowrap;padding:0 .1em}
+.c svg{position:absolute;left:-6%;top:-25%;width:112%;height:152%;overflow:visible;pointer-events:none}
+h2.hc{line-height:1.2}
+.c span{position:relative}
+.ph{position:relative;flex:none;overflow:hidden;background:#111}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.circ{border-radius:50%}
+.blob{border-radius:56% 44% 47% 53%/48% 42% 58% 52%}
+.blob2{border-radius:44% 56% 58% 42%/56% 47% 53% 44%}
+.ring{position:relative}
+.ring::after{content:"";position:absolute;inset:-13px;border:3px solid currentColor;border-radius:inherit;pointer-events:none}
+.phw{position:relative;flex:none}
+.cred{position:absolute;right:6px;bottom:2px;font-size:13px;font-weight:500;opacity:.55;letter-spacing:.01em}
+.tip{background:#fff;color:var(--ink);border-radius:16px;padding:20px 22px;font-size:21px;line-height:1.38;font-weight:500;box-shadow:0 8px 26px rgba(0,0,0,.14);max-width:340px;position:absolute;z-index:8}
+.tip.st{position:static;max-width:none}
+.pill{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#fff;border-radius:999px;padding:19px 38px;font-size:26px;font-weight:700;letter-spacing:.01em}
+.slide.b .pill{background:var(--lime);color:var(--blue2)}
+.pill.o{background:transparent;color:inherit;border:2.5px solid currentColor}
+.slide.b .pill.o{background:transparent;color:var(--lime);border-color:var(--lime)}
+.pills{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.arw{font-size:44px;font-weight:700;line-height:1;position:relative;z-index:6}
+.row{display:flex;gap:34px}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat>b{font-size:104px;font-weight:800;line-height:.92;letter-spacing:-.04em;display:block}
+.stat>span{font-size:24px;font-weight:500;line-height:1.35}
+.stat>span b{font-size:inherit;font-weight:700}
+.list{display:flex;flex-direction:column;gap:20px}
+.it{display:flex;gap:20px;align-items:flex-start}
+.it .k{font-size:30px;font-weight:800;line-height:1.2;white-space:nowrap;letter-spacing:-.02em}
+.it .v{font-size:25px;line-height:1.4;font-weight:400}
+.slide.b .it .v{color:#E7EAFF}
+.sep{height:2px;background:currentColor;opacity:.22}
+.box{background:var(--blue);color:#fff;border-radius:20px;padding:28px 32px}
+.slide.b .box{background:var(--lime);color:var(--ink)}
+.box p{color:inherit !important}
+.qm{font-size:96px;font-weight:800;line-height:.6;letter-spacing:-.04em}
+blockquote{font-size:44px;font-weight:700;line-height:1.16;letter-spacing:-.015em}
+.attr{font-size:21px;font-weight:600;opacity:.72;letter-spacing:.02em}
+.num{display:flex;gap:16px;align-items:flex-start}
+.num i{font-style:normal;font-size:27px;font-weight:800;width:44px;height:44px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--blue);color:#fff}
+.slide.b .num i{background:var(--lime);color:var(--blue2)}
+.num p{font-size:25px;line-height:1.38;padding-top:6px}
+</style>
+</head>
+<body>
+
+<!-- 1 · KAPAK -->
+<section class="slide b">
+  <svg class="wm" style="left:-190px;bottom:-170px" width="760" height="760" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86-86-38-86-86" fill="none" stroke="#CBF23E" stroke-width="26"/><path d="M100 52c26 0 48 22 48 48s-22 48-48 48" fill="none" stroke="#CBF23E" stroke-width="26"/></svg>
+  <svg style="position:absolute;right:56px;top:34px;z-index:4" width="230" height="190" viewBox="0 0 230 190" fill="none" stroke="#CBF23E" stroke-width="8" stroke-linecap="round"><path d="M18 128c40-64 96-92 128-74 30 17 8 62-22 56-28-6-16-58 30-70 34-9 62 4 74 22"/><path d="M96 168c34-22 72-26 104-12"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Kitap · 2026</span></div>
+  <div class="body" style="gap:30px">
+    <h1>Sorun yapay<br>zekâda değil,<br><span class="lime">bizde.</span></h1>
+    <div class="row" style="align-items:flex-start;gap:40px">
+      <div style="flex:1;display:flex;flex-direction:column;gap:24px">
+        <p class="lead">Herkes "yapay zekâ bizi yok edecek mi?" diye soruyor. Otuz yıldır teknoloji sektörünün içinde olan bir Türk yöneticinin cevabı bambaşka.</p>
+        <div class="sep" style="max-width:120px"></div>
+        <p class="mut">Ayşegül İldeniz'in yeni kitabı <b>"Geleceğe Son Çıkış"</b> tam da panik dalgasının ortasına düştü. Söylediklerini 8 slaytta topladım.</p>
+      </div>
+      <div class="phw">
+        <div class="ph circ ring" style="width:360px;height:360px;color:#CBF23E"><img src="photos/racks.webp"></div>
+        <span class="cred" style="right:14px;bottom:-30px;color:#CBF23E">Carl Lender · CC BY 2.0</span>
+      </div>
+    </div>
+    <div class="arw lime" style="margin-top:10px">↘</div>
+    <div class="pills"><span class="pill">Kaydır</span><span class="pill o">8 fikir</span></div>
+  </div>
+  <div class="ft"><span>Kaynak: A. İldeniz, <i>Geleceğe Son Çıkış</i> (Doğan Kitap, 2026) · yazarla söyleşi, Eylül 2026</span><span class="n">1 / 9</span></div>
+</section>
+
+<!-- 2 · PANİK -->
+<section class="slide">
+  <svg class="wm" style="right:-200px;top:-140px" width="700" height="700" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86-86-38-86-86 38-86 86-86" fill="none" stroke="#2536DF" stroke-width="24"/><path d="M100 52c26 0 48 22 48 48" fill="none" stroke="#2536DF" stroke-width="24"/></svg>
+  <svg style="position:absolute;left:40px;bottom:120px;z-index:1" width="220" height="180" viewBox="0 0 220 180" fill="none" stroke="#2536DF" stroke-width="8" stroke-linecap="round"><path d="M16 120c34-58 88-84 118-66 28 16 8 58-20 52-26-6-14-54 28-64"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Panik</span></div>
+  <div class="body" style="gap:26px">
+    <div class="arw blu">↘</div>
+    <h2 class="hc">Eylül 2026: <span class="c"><svg viewBox="0 0 300 100" preserveAspectRatio="none"><path d="M26 52C26 18 120 8 168 10c56 2 116 14 110 40-6 26-96 42-160 38C62 85 18 72 22 46" fill="none" stroke="#2536DF" stroke-width="5" stroke-linecap="round"/></svg><span class="blu">alarm</span></span> haftası</h2>
+    <div class="list" style="gap:16px">
+      <div class="sep"></div>
+      <div class="it"><span class="k blu">9 Eyl</span><span class="v">Anthropic'ten bir araştırmacı istifa etti: "Kendini geliştiren süper zekâya doğru koşuyorlar ve <b>hayatlarımızla kumar oynuyorlar.</b>"</span></div>
+      <div class="sep"></div>
+      <div class="it"><span class="k blu">14 Eyl</span><span class="v">BM İnsan Hakları Yüksek Komiseri "eşi görülmemiş riskler" için <b>acil eylem</b> çağrısı yaptı.</span></div>
+      <div class="sep"></div>
+      <div class="it"><span class="k blu">Kapak</span><span class="v">TIME dergisi "İnsanlar Yapay Zekâya Karşı" kapağıyla çıktı; ABD Kongresi'ne süper zekâyı yasaklayan bir tasarı sunuldu.</span></div>
+      <div class="sep"></div>
+    </div>
+    <div class="row" style="align-items:center;gap:32px;margin-top:4px">
+      <div class="phw">
+        <div class="ph blob ring" style="width:300px;height:300px;color:#2536DF"><img src="photos/nersc.webp"></div>
+        <span class="cred" style="right:20px;bottom:-30px">D. Coetzee · CC0</span>
+      </div>
+      <div style="flex:1">
+        <div class="box"><p style="font-size:25px;line-height:1.4">İldeniz'in tepkisi iki kelime: <b>"Şaşkınım ve kızgınım."</b> Yıllar önce "burada bir problem var" diyenler cadı avıyla susturulmuştu. Şimdi aynı şirketler bayrak sallıyor: <b>"Aferin, siz ne yaptınız?"</b></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="ft"><span>Kaynak: TechCrunch, NPR, Bloomberg (9 Eyl) · BM İnsan Hakları Ofisi (14 Eyl) · TIME</span><span class="n">2 / 9</span></div>
+</section>
+
+<!-- 3 · ZEKÂ ≠ BİLİNÇ -->
+<section class="slide b">
+  <svg class="wm" style="left:-160px;top:-180px" width="700" height="700" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86" fill="none" stroke="#CBF23E" stroke-width="24"/><path d="M100 52c26 0 48 22 48 48s-22 48-48 48" fill="none" stroke="#CBF23E" stroke-width="24"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Zekâ ≠ Bilinç</span></div>
+  <div class="body" style="gap:26px">
+    <div style="display:flex;gap:26px;align-items:flex-start">
+      <span class="qm lime">“</span>
+      <blockquote class="lime">Zeki olmak, bilinçli olmak demek değil. Çok zeki olup hiçbir niyetiniz olmayabilir — makinelerin şu andaki durumu bu.</blockquote>
+    </div>
+    <div class="attr lime" style="padding-left:52px">Ayşegül İldeniz</div>
+    <div class="sep" style="margin:4px 0"></div>
+    <div class="row" style="align-items:center;gap:36px">
+      <div style="flex:1;display:flex;flex-direction:column;gap:20px">
+        <p>Modeller çok zeki; ama bilinçleri olmadığı için <b class="wht">bir ayna gibi</b> çalışıyorlar: ne dersek onu, zekice ve hızlıca geri yansıtıyorlar. O kadar.</p>
+        <p>"İnsanları kendi hedeflerim için kullanayım" noktasına gelebileceğine dair <b class="wht">elimizde hiçbir kanıt yok.</b> Ne zaman olacağını da kimse bilmiyor.</p>
+      </div>
+      <div class="phw">
+        <div class="ph circ ring" style="width:330px;height:330px;color:#CBF23E"><img src="photos/aida.webp"></div>
+        <span class="cred" style="right:14px;bottom:-30px;color:#CBF23E">Leemurz · CC BY-SA 4.0</span>
+      </div>
+    </div>
+    <div class="box"><p style="font-size:25px">"Yarın olacak, şimdi oluyor" söylemi laboratuvarları yürüten dev şirketlerin <b>son derece işine geliyor.</b> Sıradaki halka arzlar da bu heyecana bakıyor.</p></div>
+  </div>
+  <div class="ft"><span>Kaynak: A. İldeniz söyleşisi, Eylül 2026 · Fotoğraf: Ai-Da robot</span><span class="n">3 / 9</span></div>
+</section>
+
+<!-- 4 · GERÇEK RİSKLER -->
+<section class="slide">
+  <svg class="wm" style="right:-210px;bottom:-190px" width="740" height="740" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86-86-38-86-86" fill="none" stroke="#2536DF" stroke-width="24"/><path d="M100 52c26 0 48 22 48 48s-22 48-48 48" fill="none" stroke="#2536DF" stroke-width="24"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Gerçek riskler</span></div>
+  <div class="body" style="gap:24px">
+    <h2 class="hc">Felaket olabilir mi?<br><span class="c"><svg viewBox="0 0 300 100" preserveAspectRatio="none"><path d="M26 52C26 18 120 8 168 10c56 2 116 14 110 40-6 26-96 42-160 38C62 85 18 72 22 46" fill="none" stroke="#2536DF" stroke-width="5" stroke-linecap="round"/></svg><span class="blu">Evet.</span></span> Ama nasıl?</h2>
+    <p style="max-width:700px">İldeniz'e göre gerçek tehlike "makinenin uyanması" değil. Üç senaryo sayıyor ve hepsinin ortak noktası aynı:</p>
+    <div style="display:flex;gap:32px;align-items:flex-end">
+      <div style="flex:1;display:flex;flex-direction:column;gap:16px">
+        <div class="num"><i>1</i><p><b>Kötü niyetli bir insan</b> — bir araç olarak kullanır.</p></div>
+        <div class="num"><i>2</i><p><b>Yanlış tanımlanmış hedef</b> — modele bir görev verilir, oraya giderken bizim hiç hoşumuza gitmeyecek şeyler yapar.</p></div>
+        <div class="num"><i>3</i><p><b>Altyapı</b> — elektrik, su gibi sistemleri birbirine bağlayıp yapay zekâya teslim edersek, bir kaza kontrolden çıkabilir.</p></div>
+      </div>
+      <div class="phw">
+        <div class="ph blob2 ring" style="width:340px;height:340px;color:#2536DF"><img src="photos/pylons.webp"></div>
+        <span class="cred" style="left:20px;bottom:-30px">Wilfredor · CC0</span>
+      </div>
+    </div>
+    <div class="box"><p style="font-size:26px">Hiçbiri makinenin "niyeti" yüzünden olmaz. <b>"O bizim tembelliğimiz, umursamazlığımız, maddiyattan gözümüzün yeşil yeşil yanıp sönmesiyle alakalı."</b></p></div>
+  </div>
+  <div class="ft"><span>Kaynak: A. İldeniz söyleşisi, Eylül 2026</span><span class="n">4 / 9</span></div>
+</section>
+
+<!-- 5 · UYUM PROBLEMİ -->
+<section class="slide b">
+  <svg class="wm" style="right:-180px;top:-200px" width="700" height="700" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86-86-38-86-86 38-86 86-86" fill="none" stroke="#CBF23E" stroke-width="24"/></svg>
+  <svg style="position:absolute;left:52px;bottom:130px;z-index:1" width="210" height="170" viewBox="0 0 220 180" fill="none" stroke="#CBF23E" stroke-width="8" stroke-linecap="round" opacity=".85"><path d="M16 120c34-58 88-84 118-66 28 16 8 58-20 52-26-6-14-54 28-64"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Uyum problemi</span></div>
+  <div class="body" style="gap:28px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:30px">
+      <h2 class="hc wht" style="max-width:620px">Bir karar verirken<br><span class="c"><svg viewBox="0 0 300 100" preserveAspectRatio="none"><path d="M26 52C26 18 120 8 168 10c56 2 116 14 110 40-6 26-96 42-160 38C62 85 18 72 22 46" fill="none" stroke="#CBF23E" stroke-width="5" stroke-linecap="round"/></svg><span class="lime">üç süzgeç</span></span></h2>
+      <div class="phw" style="margin-top:6px">
+        <div class="ph circ ring" style="width:250px;height:250px;color:#CBF23E"><img src="photos/hands.webp"></div>
+        <span class="cred" style="right:10px;bottom:-30px;color:#CBF23E">Shixart1985 · CC BY 2.0</span>
+      </div>
+    </div>
+    <div class="list">
+      <div class="sep"></div>
+      <div class="it"><span class="k lime">Vicdan</span><span class="v">"Bunu yaptığımda sabah kendimle uyanabilecek miyim?" — önce omurgamıza sorarız.</span></div>
+      <div class="sep"></div>
+      <div class="it"><span class="k lime">Norm</span><span class="v">"Toplum ne der, ayıplar mı, dışlar mı?" — sonra çevremize bakarız.</span></div>
+      <div class="sep"></div>
+      <div class="it"><span class="k lime">Yasa</span><span class="v">"Kanuna uygun mu?" — en son buna bakarız.</span></div>
+      <div class="sep"></div>
+    </div>
+    <div class="box"><p style="font-size:25px;line-height:1.38">Makineye yalnızca <b>üçüncüsünü</b> zorla kodluyoruz. İlk ikisi için ARGE yok. Bu teknolojiyi geliştirmeye yüz milyarlarca dolar harcandı; "insanlığın vicdanını makineye nasıl anlatırız" sorusuna çok azı.</p></div>
+  </div>
+  <div class="ft"><span>Kaynak: A. İldeniz söyleşisi, Eylül 2026</span><span class="n">5 / 9</span></div>
+</section>
+
+<!-- 6 · ÇOCUKLAR -->
+<section class="slide">
+  <svg class="wm" style="left:-200px;bottom:-200px" width="740" height="740" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86-86-38-86-86" fill="none" stroke="#2536DF" stroke-width="24"/><path d="M100 52c26 0 48 22 48 48" fill="none" stroke="#2536DF" stroke-width="24"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Çocuklar</span></div>
+  <div class="body" style="gap:26px">
+    <h2 class="hc">"Keşke ben de<br><span class="c"><svg viewBox="0 0 300 100" preserveAspectRatio="none"><path d="M26 52C26 18 120 8 168 10c56 2 116 14 110 40-6 26-96 42-160 38C62 85 18 72 22 46" fill="none" stroke="#2536DF" stroke-width="5" stroke-linecap="round"/></svg><span class="blu">9 yaşında</span></span> olsaydım."</h2>
+    <div class="row" style="gap:30px;align-items:flex-start">
+      <div class="phw" style="margin-top:6px">
+        <div class="ph circ ring" style="width:280px;height:280px;color:#2536DF"><img src="photos/kids.webp"></div>
+        <span class="cred" style="left:10px;bottom:-30px">Shixart1985 · CC BY 2.0</span>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:18px">
+        <p style="font-size:26px">"Elimizde bir <b>uzay gemisi</b> var ve ne yapacağımızı bilmiyoruz. Biz ona bakıp korkuyoruz. Halbuki bizi boş verin — o çocuk keşfetsin, o bulsun."</p>
+        <p style="font-size:24px" class="mut">Geleceğin belirsizliğinde diploma, unvan, "benim şu kadar yıllık deneyimim var" cümleleri çok şey ifade etmeyebilir.</p>
+      </div>
+    </div>
+    <p style="font-size:25px">Peki çocuğa ne verelim? Kitabın alt başlığı zaten soruyor: <b>Yapay zekâ çağında kendimizi nasıl inşa edeceğiz?</b></p>
+    <div class="list" style="gap:14px">
+      <div class="it"><span class="k blu">→</span><span class="v"><b>Kendi kararını kendi alabilen</b> çocuklar — çünkü o karanlıkta güveneceği tek kişi kendisi olacak.</span></div>
+      <div class="it"><span class="k blu">→</span><span class="v"><b>Yaratıcı, inisiyatif alan, girişimi seven</b> bireyler öne çıkacak; biz "doğru olanı seçen" tarafta kalacağız.</span></div>
+      <div class="it"><span class="k blu">→</span><span class="v">Yapay zekâ korkulacak bir şey değil, <b>hâkim olup istediğini yaptırabileceğin bir gereç.</b></span></div>
+    </div>
+  </div>
+  <div class="ft"><span>Kaynak: A. İldeniz söyleşisi, Eylül 2026</span><span class="n">6 / 9</span></div>
+</section>
+
+<!-- 7 · EŞİTSİZLİK -->
+<section class="slide b">
+  <svg class="wm" style="left:-170px;top:-160px" width="680" height="680" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86-86-38-86-86 38-86 86-86" fill="none" stroke="#CBF23E" stroke-width="24"/><path d="M100 52c26 0 48 22 48 48s-22 48-48 48" fill="none" stroke="#CBF23E" stroke-width="24"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Uçurum</span></div>
+  <div class="body" style="gap:26px">
+    <div class="arw lime">↙</div>
+    <h2 class="lime">Asıl tehlike:<br>dijital uçurum</h2>
+    <p>İldeniz yıllarca gelişmekte olan ülkelerde çalıştı. Gözlemi net: <b class="wht">erişimi olmayan, ekonomik gücü kaybediyor.</b> İnternetin, cep telefonunun yayılması bazı nüfus katmanlarında 10–20 yıl sürdü. Bu kez o kadar zamanımız yok.</p>
+    <div style="display:flex;gap:32px;align-items:flex-end">
+      <div style="flex:1;display:flex;flex-direction:column;gap:20px;padding-bottom:8px">
+        <div class="stat">
+          <b class="lime">%14</b>
+          <span>Düşük ve orta gelirli ülkelerde kadınlar mobil interneti erkeklerden <b>%14 daha az</b> kullanıyor. 885 milyon kadın hâlâ bağlantısız — ve bu açık 2024'te <b>hiç kapanmadı.</b></span>
+        </div>
+        <p style="font-size:23px" class="mut">En kırılganlar: belli bir yaşın üstündekiler, maddi ve teknolojik imkâna erişemeyenler, eşitsiz coğrafyalarda yaşayanlar.</p>
+      </div>
+      <div class="phw">
+        <div class="ph blob ring" style="width:350px;height:350px;color:#CBF23E"><img src="photos/woman.webp"></div>
+        <span class="cred" style="right:16px;bottom:-30px;color:#CBF23E">B. Ganguly · CC BY 3.0</span>
+      </div>
+    </div>
+    <div class="box"><p style="font-size:24px">Kâbus senaryosu: üç beş şirket kaleyi kurar ve "bunu ayda 20 dolara değil, <b>2.000 dolara</b> veriyorum" der.</p></div>
+  </div>
+  <div class="ft"><span>Kaynak: A. İldeniz söyleşisi · GSMA, Mobile Gender Gap Report 2025</span><span class="n">7 / 9</span></div>
+</section>
+
+<!-- 8 · TÜRKİYE -->
+<section class="slide">
+  <svg class="wm" style="right:-190px;top:-170px" width="700" height="700" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86-86-38-86-86 38-86 86-86" fill="none" stroke="#2536DF" stroke-width="24"/><path d="M100 52c26 0 48 22 48 48" fill="none" stroke="#2536DF" stroke-width="24"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Türkiye</span></div>
+  <div class="body" style="gap:24px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:28px">
+      <h2 class="hc" style="max-width:620px">Türkiye bu<br>yarışın<br><span class="c"><svg viewBox="0 0 300 100" preserveAspectRatio="none"><path d="M26 52C26 18 120 8 168 10c56 2 116 14 110 40-6 26-96 42-160 38C62 85 18 72 22 46" fill="none" stroke="#2536DF" stroke-width="5" stroke-linecap="round"/></svg><span class="blu">neresinde?</span></span></h2>
+      <div class="phw" style="margin-top:4px">
+        <div class="ph circ ring" style="width:262px;height:262px;color:#2536DF"><img src="photos/bosphorus.webp"></div>
+        <span class="cred" style="right:8px;bottom:-30px">Adbar · CC BY-SA 3.0</span>
+      </div>
+    </div>
+    <p style="max-width:720px">Önde ABD ve Çin; arkasında veri merkezine ve bilime para yatıran Singapur, Körfez ülkeleri, birkaç Avrupa ülkesi. Bir de teknolojiyi <b>hemen hayata entegre etmeye çalışan</b> ülkeler var — İldeniz'e göre bizim için güzel bir yol.</p>
+    <div class="list" style="gap:16px">
+      <div class="num"><i>1</i><p><b>KOBİ'ler.</b> Ekonominin belkemiği. Küçük bir kamera, birkaç sensör ve bir telefonla işini veriye döken KOBİ, yapay zekâyı "yönetici danışmanı" gibi kullanabilir.</p></div>
+      <div class="num"><i>2</i><p><b>Veri merkezleri.</b> Artık egemenlik ve millî güvenlik konusu; verimizi başka ülkeye yollayamayız. Ama ABD'de veri merkezleri Kasım seçimlerinin ana gündemi oldu: su, elektrik, tarım. "Bütün bölgenin yükünü taşımalı mıyız?" — ciddi bir tartışma gerekiyor.</p></div>
+      <div class="num"><i>3</i><p><b>Kendi geliştirmemiz.</b> "Başkalarının modelini alıp entegre etmek bir yere kadar." Bu bir fabrika değil; bilim insanı ve ARGE gerektiren bir dal.</p></div>
+    </div>
+  </div>
+  <div class="ft"><span>Kaynak: A. İldeniz söyleşisi · Brookings, NPR, CNBC (ABD veri merkezi tartışması, 2026)</span><span class="n">8 / 9</span></div>
+</section>
+
+<!-- 9 · KAPANIŞ -->
+<section class="slide b">
+  <svg class="wm" style="left:-200px;bottom:-180px" width="760" height="760" viewBox="0 0 200 200"><path d="M100 14c48 0 86 38 86 86s-38 86-86 86-86-38-86-86" fill="none" stroke="#CBF23E" stroke-width="26"/><path d="M100 52c26 0 48 22 48 48s-22 48-48 48" fill="none" stroke="#CBF23E" stroke-width="26"/></svg>
+  <svg style="position:absolute;right:40px;top:520px;z-index:1" width="220" height="180" viewBox="0 0 220 180" fill="none" stroke="#CBF23E" stroke-width="8" stroke-linecap="round" opacity=".9"><path d="M16 120c34-58 88-84 118-66 28 16 8 58-20 52-26-6-14-54 28-64"/><path d="M86 158c30-18 64-22 92-10"/></svg>
+  <div class="hd"><span>@sumerolog</span><span class="r">Sonuç</span></div>
+  <div class="body" style="gap:26px">
+    <h2 class="wht">Yapışmamız gereken<br>üç şey var.</h2>
+    <div class="list" style="gap:14px">
+      <div class="it"><span class="k lime">Gerçeklik</span><span class="v">Bilimden bir milimetre şaşmamak. Neyin gerçek, neyin otantik olduğunu doğrulamak zorunda kalacağız.</span></div>
+      <div class="it"><span class="k lime">Orijinallik</span><span class="v">Beni senden farklı kılan şeyler. "Bir insanın yazıp yazmadığını ilk cümlede anlıyorum."</span></div>
+      <div class="it"><span class="k lime">Hisler</span><span class="v">Türümüz konuşmayı öğrenmeden çok önce birbirini anlıyordu. Bu makinede yok.</span></div>
+    </div>
+    <div class="row" style="gap:30px;align-items:center">
+      <div class="phw">
+        <div class="ph blob2 ring" style="width:280px;height:280px;color:#CBF23E"><img src="photos/library.webp"></div>
+        <span class="cred" style="left:14px;bottom:-30px;color:#CBF23E">F. Akkurt · CC BY-SA 4.0</span>
+      </div>
+      <div style="flex:1">
+        <p style="font-size:25px">Ve hepsinin üstünde <b class="wht">özgürlük.</b> İnsanlık daha önce de yok olmanın eşiğinden döndü: yaklaşık 900 bin yıl önce atalarımızın sayısı bin civarına düşmüştü. "Bu kadar yakın zamanda keşfettiğimiz bir şeyle yol kazası yapacağımıza inanmıyorum."</p>
+      </div>
+    </div>
+    <div class="box"><p style="font-size:26px">Sizce sorun yapay zekâda mı, bizde mi? <b>Yorumda tartışalım ↓</b></p></div>
+    <div class="pills"><span class="pill">Kaydet</span><span class="pill o">Paylaş</span></div>
+  </div>
+  <div class="ft" style="font-size:15px;line-height:1.35">
+    <span>Kaynak: A. İldeniz söyleşisi, Eylül 2026 · Hu vd., <i>Science</i> 2023 (nüfus darboğazı).<br>
+    Fotoğraflar · Wikimedia Commons: Carl Lender (CC BY 2.0), Derrick Coetzee (CC0), Leemurz (CC BY-SA 4.0), Wilfredor (CC0), Shixart1985 (CC BY 2.0), Biswarup Ganguly (CC BY 3.0), Adbar (CC BY-SA 3.0), Furkan Akkurt (CC BY-SA 4.0).</span>
+    <span class="n">9 / 9</span>
+  </div>
+</section>
+
+</body>
+</html>

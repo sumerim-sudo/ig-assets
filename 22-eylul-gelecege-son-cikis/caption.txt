@@ -1,0 +1,18 @@
+"Yapay zekâ bizi yok edecek mi?" diye soran herkese, 30 yıllık bir teknolojistin cevabı: Sorun makinede değil, bizde.
+
+Ayşegül İldeniz'in yeni kitabı "Geleceğe Son Çıkış" (Doğan Kitap), Anthropic istifası, BM uyarısı ve TIME kapağıyla başlayan panik dalgasının tam ortasına düştü. Yazarın söylediklerini 8 fikirde topladım:
+
+→ Zeki olmak, bilinçli olmak demek değil. Modeller bir ayna gibi: ne dersek onu yansıtıyorlar.
+→ Felaket olabilir; ama kötü niyetli bir insan, yanlış tanımlanmış bir hedef ya da yapay zekâya teslim edilmiş altyapı yüzünden. Makinenin "niyeti" yüzünden değil.
+→ İnsan karar verirken vicdan → toplum normu → yasa süzgecinden geçer. Makineye yalnızca yasayı kodluyoruz; ilk ikisi için ARGE yok.
+→ Çocuklara verilecek en iyi şey: kendi kararını kendi alabilme ve orijinallik. "Keşke ben de 9 yaşında olsaydım."
+→ Asıl tehlike dijital uçurum: düşük ve orta gelirli ülkelerde kadınlar mobil interneti erkeklerden %14 daha az kullanıyor (GSMA 2025).
+→ Türkiye için yol: KOBİ'leri veriye dökmek, veri merkezi tartışmasını ciddiye almak, kendi modelimizi geliştirmek.
+→ Yapışmamız gereken üç şey: gerçeklik, orijinallik, hislerimiz. Hepsinin üstünde özgürlük.
+
+Sizce sorun yapay zekâda mı, bizde mi? Yorumda tartışalım 👇
+
+Kaynaklar: Ayşegül İldeniz ile söyleşi (Eylül 2026) · TechCrunch, NPR, Bloomberg (9 Eylül) · BM İnsan Hakları Ofisi (14 Eylül) · TIME · GSMA Mobile Gender Gap Report 2025 · Brookings/NPR/CNBC (ABD veri merkezi tartışması) · Hu vd., Science 2023.
+Fotoğraflar: Wikimedia Commons — Carl Lender (CC BY 2.0), Derrick Coetzee (CC0), Leemurz (CC BY-SA 4.0), Wilfredor (CC0), Shixart1985 (CC BY 2.0), Biswarup Ganguly (CC BY 3.0), Adbar (CC BY-SA 3.0), Furkan Akkurt (CC BY-SA 4.0).
+
+#yapayzeka #gelecegesoncikis #kitap #teknoloji #egitim
