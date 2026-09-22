@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-Regular.ttf");font-weight:400}
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-Medium.ttf");font-weight:500}
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-Bold.ttf");font-weight:700}
+@font-face{font-family:"P";src:url("../tools/fonts/Poppins-ExtraBold.ttf");font-weight:800}
+:root{--navy:#0B1240;--blue:#2536DF;--lime:#CBF23E;--w:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#9aa0b5;font-family:"P",sans-serif;-webkit-font-smoothing:antialiased}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;margin:0 auto;padding:60px 64px 56px;display:flex;flex-direction:column;background:var(--navy);color:var(--w)}
+.bg{position:absolute;inset:0;z-index:0}
+.bg img{width:100%;height:100%;object-fit:cover;display:block}
+.bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,18,64,.55) 0%,rgba(11,18,64,0) 30%,rgba(11,18,64,0) 45%,rgba(11,18,64,.92) 72%,#0B1240 100%)}
+.hd{display:flex;justify-content:space-between;align-items:center;font-size:23px;font-weight:600;position:relative;z-index:6}
+.hd .r{font-weight:500;opacity:.75;text-transform:uppercase;letter-spacing:.14em;font-size:19px}
+.body{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:22px;position:relative;z-index:5}
+.ft{display:flex;justify-content:space-between;align-items:flex-end;font-size:18px;font-weight:500;opacity:.7;position:relative;z-index:6;gap:24px}
+.ft .n{font-weight:700;opacity:1;white-space:nowrap}
+h1{font-size:92px;font-weight:800;line-height:.98;letter-spacing:-.03em}
+h2{font-size:66px;font-weight:800;line-height:1.02;letter-spacing:-.025em}
+p{font-size:27px;line-height:1.45;font-weight:400;color:#DDE1FF}
+p.lead{font-size:30px;line-height:1.4;font-weight:500;color:#fff}
+.lime{color:var(--lime)}
+.tag{display:inline-flex;align-self:flex-start;background:var(--lime);color:#0B1240;border-radius:999px;padding:12px 26px;font-size:22px;font-weight:700;letter-spacing:.02em}
+.tag.o{background:transparent;color:var(--lime);border:2.5px solid var(--lime)}
+.pill{display:inline-flex;align-items:center;gap:10px;background:var(--lime);color:#0B1240;border-radius:999px;padding:19px 38px;font-size:26px;font-weight:700}
+.ph{position:relative;flex:none;overflow:hidden;border-radius:28px;background:#111;height:600px;margin-top:26px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 2px rgba(203,242,62,.35);border-radius:28px}
+.stat{display:flex;flex-direction:column;gap:2px}
+.stat>b{font-size:120px;font-weight:800;line-height:.92;letter-spacing:-.04em;display:block;color:var(--lime)}
+.stat>span{font-size:24px;font-weight:500;line-height:1.35;color:#DDE1FF}
+.box{background:rgba(255,255,255,.08);border:1.5px solid rgba(203,242,62,.35);border-radius:20px;padding:22px 28px}
+.box p{font-size:24px;line-height:1.4}
+.list{display:flex;flex-direction:column;gap:14px}
+.it{display:flex;gap:18px;align-items:flex-start;font-size:26px;line-height:1.35;color:#fff}
+.it i{font-style:normal;color:var(--lime);font-weight:800;flex:none}
+.sep{height:2px;background:#fff;opacity:.18}
+</style>
+</head>
+<body>
+
+<!-- 1 · KAPAK -->
+<section class="slide">
+  <div class="bg"><img src="photos/1.jpg"></div>
+  <div class="hd"><span>@sumerolog</span><span class="r">Haftalık Teknoloji</span></div>
+  <div class="body" style="gap:20px">
+    <span class="tag">15 – 21 Eylül 2026</span>
+    <h1>Bu hafta teknolojide <span class="lime">3 kırılma</span> yaşandı.</h1>
+    <p class="lead" style="max-width:880px">Bir çip devi 1 trilyon dolar kulübüne girdi, Siri sonunda "akıllandı", iki dev alışveriş ajanları yüzünden kapıştı.</p>
+    <span class="pill" style="align-self:flex-start;margin-top:4px">Kaydır ↘</span>
+  </div>
+  <div class="ft"><span>Görseller: yapay zekâ ile üretildi</span><span class="n">1 / 4</span></div>
+</section>
+
+<!-- 2 · AMD -->
+<section class="slide">
+  <div class="hd"><span>@sumerolog</span><span class="r">Çip · 21 Eylül</span></div>
+  <div class="ph"><img src="photos/2.jpg"></div>
+  <div class="body" style="gap:18px;justify-content:center">
+    <div class="stat"><b>1 trilyon $</b><span>AMD'nin piyasa değeri — ilk kez. ABD'de bu eşiği geçen <b style="color:#fff">4. çip şirketi</b>.</span></div>
+    <div class="sep"></div>
+    <p>Hisse 5 günlük yükselişin sonunda pazartesi rekor kırdı; yapay zekâ çiplerine talep tüm sektörü sürükledi. Nasdaq, haziran ayından beri ilk kez rekor kapanış yaptı.</p>
+  </div>
+  <div class="ft"><span>Kaynak: CNBC, Semafor, Quartz (21 Eyl 2026)</span><span class="n">2 / 4</span></div>
+</section>
+
+<!-- 3 · SİRİ -->
+<section class="slide">
+  <div class="hd"><span>@sumerolog</span><span class="r">Apple · 14 Eylül</span></div>
+  <div class="ph"><img src="photos/3.jpg" style="object-position:50% 18%"></div>
+  <div class="body" style="gap:18px;justify-content:center">
+    <h2>iOS 27 çıktı: <span class="lime">Siri AI</span> sonunda burada.</h2>
+    <div class="list">
+      <div class="it"><i>→</i><span>Mesaj, e-posta ve takvimini okuyup <b>bağlamı anlıyor</b>; senin yerine uygulamalar arasında iş yapıyor.</span></div>
+      <div class="it"><i>→</i><span>Apple bile "beta" diyor: <b>hata yapabilir.</b></span></div>
+      <div class="it"><i>→</i><span>Önce İngilizce; ekimde 5 dil daha. <b>Türkçe listede yok.</b></span></div>
+    </div>
+  </div>
+  <div class="ft"><span>Kaynak: Apple Newsroom, CNBC, Gizmodo (14–15 Eyl 2026)</span><span class="n">3 / 4</span></div>
+</section>
+
+<!-- 4 · AMAZON vs META -->
+<section class="slide">
+  <div class="hd"><span>@sumerolog</span><span class="r">Ajan savaşları · 21 Eylül</span></div>
+  <div class="ph" style="height:520px"><img src="photos/4.jpg" style="object-position:50% 40%"></div>
+  <div class="body" style="gap:16px;justify-content:center">
+    <h2 style="font-size:58px">Amazon, Meta'nın alışveriş ajanı <span class="lime">Muse</span>'u kapıdan çevirdi.</h2>
+    <p>Muse senin yerine alışveriş yapan bir yapay zekâ ajanı; aynı hafta App Store'da 1 numaraya çıktı. Amazon "izinsiz ajan, kullanım koşullarına aykırı" dedi. Daha önce Perplexity'nin ajanlarını da engellemişti.</p>
+    <div class="box"><p><b style="color:#CBF23E">Asıl soru:</b> Alışverişi senin yerine bir ajan yaparken mağaza kimin? Sence kim haklı? Yorumda tartışalım ↓ &nbsp;·&nbsp; Haftaya lazım olur, <b>kaydet.</b></p></div>
+  </div>
+  <div class="ft"><span>Kaynak: Bloomberg, TechCrunch, GeekWire (21 Eyl 2026)</span><span class="n">4 / 4</span></div>
+</section>
+
+</body>
+</html>
