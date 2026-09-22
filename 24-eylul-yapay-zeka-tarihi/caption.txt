@@ -1,0 +1,15 @@
+ChatGPT 2022'de çıktı. Ama hikâye 1920'de, Prag'da bir tiyatro sahnesinde başladı.
+
+Yapay zekânın 100 yıllık yolculuğunu 8 slaytta topladım:
+
+→ 1920: Karel Čapek'in R.U.R. oyunu "robot" kelimesini ve makinelerin insandan bağımsız gelişebileceği fikrini sahneye taşıdı.
+→ 1943–1950: McCulloch ve Pitts ilk yapay nöronu tasarladı; Turing'in makalesi "makine zekâsı mümkün" dedi ve Turing testini tanıttı.
+→ 1956: Dartmouth'taki iki aylık atölyede alana "yapay zekâ" adı kondu. 1965'te Simon, 20 yıl içinde makinelerin her işi yapacağını öngördü. Olmadı.
+→ 1974 ve 1987: İki "yapay zekâ kışı". Fonlar kesildi, aradaki baharda uzman sistemler pazarı 1 milyar doları aştı, sonra Lisp makinesi pazarı çöktü.
+→ 1990–2012: LeCun'un el yazısı tanıyan ağları ve 2012'de derin öğrenmenin sıçraması. Arkasında GPU, bulut ve devasa veri kümeleri.
+→ 2015–2024: AlphaGo dünya şampiyonunu yendi, ChatGPT 2 ayda 100 milyon kullanıcıya ulaştı, 2024'te fon alan girişimlerin %22'si kendini YZ şirketi olarak tanımladı.
+→ Bugün: Tesler teoremi hâlâ geçerli: "Yapay zekâ, henüz yapılmamış olan şeydir." Sıradanlaşan her şey listeden düşüyor.
+
+Sizce bir sonraki "kış" gelir mi, yoksa bu sefer farklı mı? Yorumda tartışalım 👇
+
+#yapayzeka #teknolojitarihi #chatgpt #derinogrenme #bilim
