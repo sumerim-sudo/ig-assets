@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:"Poppins";src:url("../tools/fonts/Poppins-Regular.ttf");font-weight:400}
+@font-face{font-family:"Poppins";src:url("../tools/fonts/Poppins-Medium.ttf");font-weight:500}
+@font-face{font-family:"Poppins";src:url("../tools/fonts/Poppins-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"Poppins";src:url("../tools/fonts/Poppins-Bold.ttf");font-weight:700}
+:root{--ind:#2B2A8C;--per:#8E8FE9;--per2:#B7B8F4;--ora:#F58A1F;--wht:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;font-family:"Poppins",sans-serif;-webkit-font-smoothing:antialiased}
+#stage{width:1080px;height:1920px;position:relative;overflow:hidden;background:var(--ind)}
+.scene{position:absolute;inset:0;overflow:hidden;will-change:transform,opacity}
+.scene.light{background:var(--per);color:var(--ind)}
+.scene.dark{background:var(--ind);color:var(--wht)}
+.inner{position:absolute;left:0;right:0;top:260px;bottom:340px;padding:0 90px;display:flex;flex-direction:column;justify-content:center;gap:44px;z-index:3}
+h1{font-size:96px;line-height:1.1;font-weight:400;letter-spacing:-.01em}
+h2{font-size:70px;line-height:1.14;font-weight:400;letter-spacing:-.01em}
+b{font-weight:700}
+p{font-size:40px;line-height:1.45;font-weight:400}
+.o{color:var(--ora)}
+.per{color:var(--per)}
+.light .per{color:var(--ind);opacity:.72}
+.hl{background:var(--ora);color:#fff;padding:2px 18px;display:inline-block}
+.tag{align-self:flex-start;background:var(--per2);color:var(--ind);padding:12px 26px;font-weight:600;font-size:26px;letter-spacing:.07em;text-transform:uppercase}
+.light .tag{background:var(--ind);color:#fff}
+.big{font-size:360px;line-height:.86;font-weight:700;letter-spacing:-.04em;color:var(--ora)}
+.grid{display:flex}
+.cell{width:280px;height:280px;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;font-weight:600;font-size:27px;line-height:1.2}
+.cell b{display:block;font-size:82px;font-weight:700;line-height:1;margin-bottom:10px;letter-spacing:-.02em}
+.cell.w{background:#fff;color:var(--ind)}
+.cell.o{background:var(--ora);color:#fff}
+.cell.d{background:var(--ind);color:#fff}
+.bars{display:flex;flex-direction:column;gap:26px}
+.bar{display:flex;align-items:center;gap:26px;font-size:28px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.bar>span{width:250px;flex:none}
+.bar .track{height:44px;flex:none;position:relative;background:rgba(255,255,255,.14)}
+.light .bar .track{background:rgba(43,42,140,.12)}
+.bar .track i{position:absolute;left:0;top:0;bottom:0;background:var(--ora);display:block}
+.bar .track.b i{background:var(--per2)}
+.light .bar .track.b i{background:var(--ind)}
+.bar em{font-style:normal;font-weight:700;font-size:44px;min-width:70px}
+.list{display:flex;flex-direction:column;gap:26px}
+.li{display:flex;gap:26px;align-items:flex-start;font-size:38px;line-height:1.35;font-weight:400}
+.li i{flex:none;width:54px;height:54px;background:var(--ora);color:#fff;font-style:normal;font-weight:700;font-size:26px;display:flex;align-items:center;justify-content:center;margin-top:6px}
+.btn{align-self:flex-start;background:var(--ora);color:#fff;font-weight:700;font-size:34px;padding:22px 40px}
+.btn.w{background:#fff;color:var(--ind)}
+.src{position:absolute;left:90px;bottom:250px;font-size:26px;font-weight:500;color:var(--per2);z-index:4}
+.light .src{color:var(--ind);opacity:.75}
+.handle{position:absolute;left:44px;bottom:340px;transform:rotate(-90deg);transform-origin:left bottom;font-size:24px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--per2);z-index:4;white-space:nowrap}
+.light .handle{color:var(--ind);opacity:.7}
+.g{position:absolute;z-index:1}
+.tri{width:0;height:0}
+.circ{border-radius:50%}
+.spark{position:absolute;z-index:2}
+.prog{position:absolute;left:0;top:0;height:10px;background:var(--ora);z-index:9}
+.photo{position:absolute;inset:0;z-index:0;background-size:cover;background-position:22% 42%;opacity:.7}
+.veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(43,42,140,.55) 0%,rgba(43,42,140,.30) 26%,rgba(43,42,140,.88) 62%,rgba(43,42,140,.97) 100%)}
+</style>
+</head>
+<body>
+<div id="stage">
+
+<!-- S1 HOOK -->
+<section class="scene dark" data-in="0" data-out="5.4">
+  <div class="photo" id="hero" style="background-image:url('ekinoks-hero.jpg')"></div>
+  <div class="veil"></div>
+  <div class="g" style="left:0;top:0;width:150px;height:150px;background:var(--ora)"></div>
+  <div class="g tri" style="right:0;top:0;border-top:300px solid var(--per);border-left:300px solid transparent"></div>
+  <div class="g" style="left:0;bottom:0;width:0;height:0;border-bottom:320px solid var(--per);border-right:320px solid transparent;opacity:.85"></div>
+  <div class="handle">@sumerolog</div>
+  <div class="inner" style="justify-content:center;gap:34px">
+    <h1 class="an" data-t="0.15" data-type="up">Bugün gece ve gündüz<br><b>eşit değil.</b></h1>
+    <h2 class="an" data-t="1.5" data-type="up" style="color:var(--per2)">Ekinoks hep böyle anlatılır.<br>Ama saat tutarsan <b style="color:#fff">tutmaz.</b></h2>
+    <div style="display:flex;align-items:baseline;gap:30px">
+      <div class="big an count" data-t="2.8" data-d="1.3" data-to="8">0</div>
+      <div class="an" data-t="3.4" data-type="up" style="font-size:44px;font-weight:600;color:#fff">dakika<br>fazla gündüz</div>
+    </div>
+  </div>
+</section>
+
+<!-- S2 NEDEN -->
+<section class="scene light" data-in="5.4" data-out="11.2">
+  <div class="g tri" style="left:0;top:0;border-top:280px solid var(--ora);border-right:280px solid transparent"></div>
+  <svg class="spark" style="left:66px;top:66px" width="76" height="76" viewBox="0 0 40 40"><path d="M20 0 C21 14 26 19 40 20 C26 21 21 26 20 40 C19 26 14 21 0 20 C14 19 19 14 20 0Z" fill="#fff"/></svg>
+  <div class="g tri" style="right:0;top:0;border-bottom:230px solid var(--ind);border-left:230px solid transparent"></div>
+  <div class="g circ" style="right:0;bottom:120px;width:200px;height:200px;background:var(--ind)"></div>
+  <div class="handle">@sumerolog</div>
+  <div class="inner">
+    <span class="tag an" data-t="0.1" data-type="up">Neden tutmuyor?</span>
+    <h2 class="an" data-t="0.35" data-type="up">Çünkü "gün doğumu" Güneş'in merkezi değil, <b>üst kenarı</b> demek.</h2>
+    <p class="an per" data-t="1.2" data-type="up">Ufukta ilk kıvılcım göründüğü an gündüz başlar. Akşam da son kıvılcım kaybolana kadar sürer. İki uçtan birden kazanç.</p>
+    <div class="grid">
+      <div class="cell w an" data-t="2.1" data-type="pop"><b>16'</b>Güneş'in yarıçapı</div>
+      <div class="cell o an" data-t="2.35" data-type="pop"><b>34'</b>atmosferik kırılma</div>
+      <div class="cell d an" data-t="2.6" data-type="pop"><b>50'</b>toplam sapma</div>
+    </div>
+  </div>
+  <div class="src">Kaynak: ABD Deniz Gözlemevi (USNO)</div>
+</section>
+
+<!-- S3 MERCEK -->
+<section class="scene dark" data-in="11.2" data-out="17.0">
+  <div class="g tri" style="right:0;top:0;border-top:260px solid var(--per);border-left:260px solid transparent"></div>
+  <div class="g circ" style="right:100px;top:300px;width:160px;height:160px;background:var(--ora)"></div>
+  <svg class="spark" style="right:142px;top:342px" width="72" height="72" viewBox="0 0 40 40"><path d="M20 0 C21 14 26 19 40 20 C26 21 21 26 20 40 C19 26 14 21 0 20 C14 19 19 14 20 0Z" fill="#fff"/></svg>
+  <div class="g" style="left:0;bottom:0;width:0;height:0;border-bottom:260px solid var(--ora);border-right:260px solid transparent"></div>
+  <div class="handle">@sumerolog</div>
+  <div class="inner">
+    <span class="tag an" data-t="0.1" data-type="up">Atmosfer bir mercek</span>
+    <h2 class="an" data-t="0.3" data-type="up">Güneş ufkun <b class="o">altındayken</b> bile onu görüyorsun.</h2>
+    <div class="list">
+      <div class="li an" data-t="1.0" data-type="left"><i>1</i><span>Hava ışığı büküyor; Güneş olduğundan <b>yukarıda</b> görünüyor</span></div>
+      <div class="li an" data-t="1.5" data-type="left"><i>2</i><span>Sabah birkaç dakika <b>erken</b> doğmuş gibi olur</span></div>
+      <div class="li an" data-t="2.0" data-type="left"><i>3</i><span>Akşam birkaç dakika <b>geç</b> batmış gibi olur</span></div>
+    </div>
+    <p class="an per" data-t="2.9" data-type="up">Yani bu akşam veda ettiğin Güneş, <b style="color:#fff">çoktan batmış</b> bir Güneş'in görüntüsü.</p>
+  </div>
+  <div class="src">Kaynak: ABD Deniz Gözlemevi (USNO)</div>
+</section>
+
+<!-- S4 ISTANBUL -->
+<section class="scene light" data-in="17.0" data-out="22.6">
+  <div class="g tri" style="left:0;top:0;border-top:260px solid var(--ind);border-right:260px solid transparent"></div>
+  <div class="g" style="right:0;top:0;width:170px;height:170px;background:var(--ora)"></div>
+  <div class="g tri" style="right:0;bottom:0;border-bottom:280px solid var(--ind);border-left:280px solid transparent"></div>
+  <div class="handle">@sumerolog</div>
+  <div class="inner">
+    <span class="tag an" data-t="0.1" data-type="up">İstanbul · 23 Eylül</span>
+    <h2 class="an" data-t="0.3" data-type="up">Bugünün <b>gerçek</b> bilançosu:</h2>
+    <div class="grid">
+      <div class="cell o an" data-t="1.0" data-type="pop"><b style="font-size:66px">12:09</b>gündüz</div>
+      <div class="cell d an" data-t="1.25" data-type="pop"><b style="font-size:66px">11:51</b>gece</div>
+      <div class="cell w an" data-t="1.5" data-type="pop"><b>+8</b>dakika fark</div>
+    </div>
+    <p class="an per" data-t="2.3" data-type="up">Enlem yükseldikçe fark açılıyor: kutuplara doğru gidildikçe ekinoks günü gündüz <b>10 dakikadan</b> fazla uzun.</p>
+  </div>
+  <div class="src">Hesap: gün doğumu–batımı, İstanbul 41°K</div>
+</section>
+
+<!-- S5 EQUILUX -->
+<section class="scene dark" data-in="22.6" data-out="27.6">
+  <div class="g" style="left:0;top:0;width:150px;height:150px;background:var(--ora)"></div>
+  <div class="g tri" style="right:0;top:0;border-bottom:260px solid var(--per);border-left:260px solid transparent"></div>
+  <div class="g" style="right:0;bottom:0;width:300px;height:300px;background:var(--ora);border-radius:300px 0 0 0"></div>
+  <div class="handle">@sumerolog</div>
+  <div class="inner">
+    <span class="tag an" data-t="0.1" data-type="up">Peki gerçek eşitlik?</span>
+    <h2 class="an" data-t="0.3" data-type="up">Onun da adı var: <b class="o">equilux.</b></h2>
+    <div class="list" style="gap:30px">
+      <div class="li an" data-t="1.0" data-type="left"><i>1</i><span>İstanbul'da <b>25–26 Eylül</b> civarı — ekinokstan günler sonra</span></div>
+      <div class="li an" data-t="1.5" data-type="left"><i>2</i><span>Ekvator'a yakın yerlerde <b>ekim ortasında</b></span></div>
+      <div class="li an" data-t="2.0" data-type="left"><i>3</i><span>Ekvatorda <b>hiç olmuyor:</b> gündüz yılın her günü birkaç dakika uzun</span></div>
+    </div>
+  </div>
+  <div class="src">Kaynak: ABD Deniz Gözlemevi (USNO)</div>
+</section>
+
+<!-- S6 CTA -->
+<section class="scene light" data-in="27.6" data-out="31.4">
+  <div class="g tri" style="left:0;top:0;border-top:260px solid var(--ora);border-right:260px solid transparent"></div>
+  <div class="g tri" style="right:0;top:0;border-top:260px solid var(--ind);border-left:260px solid transparent"></div>
+  <svg class="spark" style="right:70px;top:70px" width="72" height="72" viewBox="0 0 40 40"><path d="M20 0 C21 14 26 19 40 20 C26 21 21 26 20 40 C19 26 14 21 0 20 C14 19 19 14 20 0Z" fill="#fff"/></svg>
+  <div class="g" style="right:0;bottom:0;width:180px;height:180px;background:var(--ind)"></div>
+  <div class="g circ" style="right:180px;bottom:0;width:180px;height:180px;background:var(--ora);border-radius:180px 180px 0 0"></div>
+  <div class="handle">@sumerolog</div>
+  <div class="inner" style="justify-content:center">
+    <h1 class="an" data-t="0.15" data-type="up">Bugün eşitlik günü değil. <span class="hl">Eşitliğe en yakın gün.</span></h1>
+    <p class="an" data-t="1.1" data-type="up">Kaydet, 25 Eylül akşamı bir daha bak. Sence "ekinoks = eşit gün" bilgisi okulda neden hâlâ böyle öğretiliyor?</p>
+    <span class="btn an" data-t="1.8" data-type="pop">Yorumda tartışalım ↓</span>
+  </div>
+</section>
+
+<div class="prog" id="prog"></div>
+</div>
+
+<script>
+const TOTAL = 31.4;
+const scenes = [...document.querySelectorAll('.scene')];
+scenes.forEach(s=>{
+  s.__in = parseFloat(s.dataset.in); s.__out = parseFloat(s.dataset.out);
+  s.__els = [...s.querySelectorAll('.an')].map(e=>({
+    el:e, t:parseFloat(e.dataset.t||0), d:parseFloat(e.dataset.d||0.55),
+    type:e.dataset.type||'up', to:parseFloat(e.dataset.to||0), w:parseFloat(e.dataset.w||0)
+  }));
+});
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const outCubic=p=>1-Math.pow(1-p,3);
+const outBack=p=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(p-1,3)+c1*Math.pow(p-1,2);};
+const outQuint=p=>1-Math.pow(1-p,5);
+
+function render(t){
+  document.getElementById('prog').style.width = (clamp(t/TOTAL,0,1)*1080)+'px';
+  for(const s of scenes){
+    const local = t - s.__in, dur = s.__out - s.__in;
+    if(local < -0.01 || local > dur){ s.style.display='none'; continue; }
+    s.style.display='block';
+    let op=1, ty=0, sc=1;
+    const inD=0.45, outD=0.35;
+    if(local < inD){ const p=outCubic(clamp(local/inD,0,1)); op=p; ty=(1-p)*60; sc=0.985+0.015*p; }
+    else if(local > dur-outD){ const p=clamp((local-(dur-outD))/outD,0,1); op=1-p; ty=-p*40; sc=1-0.02*p; }
+    s.style.opacity=op;
+    s.style.transform=`translateY(${ty}px) scale(${sc})`;
+    const hero=s.querySelector('.photo');
+    if(hero){ hero.style.transform=`scale(${1.04+0.05*clamp(local/dur,0,1)})`; }
+    for(const a of s.__els){
+      const lp = clamp((local - a.t)/a.d, 0, 1);
+      const e = a.type==='pop' ? outBack(lp) : outQuint(lp);
+      if(a.type==='count'||a.el.classList.contains('count')){
+        const v = Math.round(outQuint(lp)*a.to);
+        a.el.textContent = String(v);
+        a.el.style.opacity = clamp(lp*4,0,1);
+        continue;
+      }
+      if(a.type==='bar'){
+        a.el.firstElementChild.style.width = (outQuint(lp)*a.w)+'px';
+        a.el.style.opacity = clamp(lp*4,0,1);
+        continue;
+      }
+      a.el.style.opacity = clamp(lp*1.6,0,1);
+      if(a.type==='up')   a.el.style.transform=`translateY(${(1-e)*48}px)`;
+      if(a.type==='left') a.el.style.transform=`translateX(${(1-e)*70}px)`;
+      if(a.type==='pop')  a.el.style.transform=`scale(${0.82+0.18*e})`;
+    }
+  }
+}
+window.render = render;
+window.TOTAL = TOTAL;
+render(0);
+</script>
+</body>
+</html>

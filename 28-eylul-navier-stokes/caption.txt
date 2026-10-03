@@ -1,0 +1,13 @@
+Yapay zekâ 1 milyon dolarlık soruyu çözdü mü? Cevap: hem evet, hem hayır. 🌀
+
+OpenAI, 8 Eylül'de 10.000 yapay zekâ ajanının yaklaşık 88 saatte Navier–Stokes problemine bir ispat ürettiğini açıkladı. İspat 166 sayfa ve Lean ile biçimsel olarak doğrulandı.
+
+Ama işin püf noktası şurada: çözülen versiyon, akışkana dışarıdan “özel tasarlanmış” bir kuvvet uygulanan versiyon. Birçok matematikçiye göre Clay'in problemi teknik olarak çözüldü, Navier–Stokes'un asıl sorusu ise hâlâ açık. Ödül için de dergide yayın, 2 yıl bekleme ve camianın genel kabulü gerekiyor.
+
+Bir de işin öncelik ve bilim etiği tarafı var: Levent Alpöge ile Tristan Buckmaster'ın zorlanmış Euler çalışması ve taraflar arasındaki tartışma. (Not: “Türk matematikçi Navier–Stokes'u çözdü” haberleri doğru değil.)
+
+Sence bu ispatı kim yaptı: makine mi, onu yönlendiren ekip mi, fikri ilk bulan matematikçiler mi? Yorumda tartışalım 👇 Kaydetmeyi unutma.
+
+#yapayzeka #matematik #navierstokes #bilim #openai
+
+Görseller yapay zekâ ile üretilmiştir.
