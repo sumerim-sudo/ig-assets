@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350"><rect width="1080" height="1350" fill="#64B8F7"/>
+<text x="78" y="99" fill="#102B53" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" letter-spacing="2">BİLİM / TEKNOLOJİ</text>
+<text x="1002" y="99" fill="#102B53" font-family="Arial" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">06 / 09</text>
+<line x1="78" y1="132" x2="1002" y2="132" stroke="#102B53" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+<text x="78" y="1262" fill="#102B53" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" letter-spacing="1">DNA BİLGİSAYARI</text>
+<text x="1002" y="1262" fill="#102B53" font-family="Arial" font-size="23" font-weight="700" text-anchor="end" letter-spacing="1">KAYDIR  →</text>
+<rect x="78" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="182" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="286" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="390" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="494" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="598" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="1"/>
+<rect x="702" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="806" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="910" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<text x="78" y="242" fill="#102B53" font-family="Arial" font-size="30" font-weight="700" text-anchor="start" letter-spacing="2">DENEYLERDE</text>
+<text x="62" y="489" fill="#102B53" font-family="Arial" font-size="236" font-weight="700" text-anchor="start" letter-spacing="0">700+</text>
+<text x="78" y="598" fill="#102B53" font-family="Arial" font-size="87" font-weight="700" text-anchor="start" letter-spacing="0">hesaplama.</text>
+<text x="78" y="743.0" fill="#102B53" font-family="Arial" font-size="40" font-weight="400" text-anchor="start" letter-spacing="0">10 farklı program denendi.</text>
+<text x="78" y="797.0" fill="#102B53" font-family="Arial" font-size="40" font-weight="400" text-anchor="start" letter-spacing="0">Toplama, 3 ile çarpma ve 2’ye bölme</text>
+<text x="78" y="851.0" fill="#102B53" font-family="Arial" font-size="40" font-weight="400" text-anchor="start" letter-spacing="0">bunlardan bazıları.</text>
+<rect x="78" y="987" width="288" height="155" rx="20" fill="#EFF6FF" opacity="1"/>
+<text x="222" y="1097" fill="#102B53" font-family="Arial" font-size="84" font-weight="700" text-anchor="middle" letter-spacing="0">+</text>
+<rect x="396" y="987" width="288" height="155" rx="20" fill="#EFF6FF" opacity="1"/>
+<text x="540" y="1097" fill="#102B53" font-family="Arial" font-size="84" font-weight="700" text-anchor="middle" letter-spacing="0">× 3</text>
+<rect x="714" y="987" width="288" height="155" rx="20" fill="#EFF6FF" opacity="1"/>
+<text x="858" y="1097" fill="#102B53" font-family="Arial" font-size="84" font-weight="700" text-anchor="middle" letter-spacing="0">÷ 2</text>
+</svg>

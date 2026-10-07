@@ -1,0 +1,26 @@
+01 — Bir damla su hesaplama yapabilir mi?
+DNA'dan yapılan bir bilgisayar bunu başardı.
+
+02 — Bu bilgisayar bir tüpün içinde.
+Maynooth Üniversitesi araştırmacıları, DNA parçalarıyla işlem yapan bir sistem geliştirdi. Su + tuz + DNA. Adı: Scaffolded DNA Computer (SDC).
+
+03 — DNA burada programın parçası.
+Seçilen DNA dizileri, yapılacak işlemi ve girdileri belirliyor.
+
+04 — Cevap, eşleşmelerde.
+Kısa DNA parçaları bir iskelete bağlanıyor. Sistem, doğru cevabı temsil eden daha kararlı yapıya yöneliyor.
+
+05 — Sürekli elektrik akışı gerekmiyor.
+Karışım önce ısıtılıp soğutuluyor. Ardından moleküllerin etkileşimi hesaplamayı ilerletiyor. Bu, “sıfır enerji” demek değil.
+
+06 — 700+ hesaplama.
+10 farklı program denendi. Toplama, 3 ile çarpma ve 2’ye bölme bunlardan bazıları.
+
+07 — Hızlı mı? Henüz değil.
+Küçük işlemler yaklaşık 30 saniyede sonuçlanabildi. Daha büyük örnekler 14 saate kadar sürdü. Telefon işlemcilerinden çok daha yavaş.
+
+08 — Asıl potansiyel: moleküler dünya.
+Gelecekte hücre içinde hesaplama ve DNA’da saklanan veriyi işleme için kullanılabilir. Bunlar henüz olası uygulamalar.
+
+09 — Bilgisayar fikri değişiyor.
+Bugün laboratuvarda bir deney. Gelecekte hesaplama yapan moleküller hayatımızın parçası olabilir. Sence ilk nerede kullanılır? Yorumlarda buluşalım.

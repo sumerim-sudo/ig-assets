@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350"><rect width="1080" height="1350" fill="#EFF6FF"/>
+<text x="78" y="99" fill="#102B53" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" letter-spacing="2">BİLİM / TEKNOLOJİ</text>
+<text x="1002" y="99" fill="#102B53" font-family="Arial" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">04 / 09</text>
+<line x1="78" y1="132" x2="1002" y2="132" stroke="#102B53" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+<text x="78" y="1262" fill="#102B53" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" letter-spacing="1">DNA BİLGİSAYARI</text>
+<text x="1002" y="1262" fill="#102B53" font-family="Arial" font-size="23" font-weight="700" text-anchor="end" letter-spacing="1">KAYDIR  →</text>
+<rect x="78" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="182" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="286" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="390" y="1292" width="92" height="5" rx="0" fill="#64B8F7" opacity="1"/>
+<rect x="494" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="598" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="702" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="806" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="910" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<text x="78" y="244" fill="#102B53" font-family="Arial" font-size="96" font-weight="700" text-anchor="start" letter-spacing="0">Cevap,</text>
+<text x="78" y="347" fill="#102B53" font-family="Arial" font-size="96" font-weight="700" text-anchor="start" letter-spacing="0">eşleşmelerde.</text>
+<text x="78" y="460.0" fill="#102B53" font-family="Arial" font-size="39" font-weight="400" text-anchor="start" letter-spacing="0">Kısa DNA parçaları bir iskelete bağlanıyor.</text>
+<text x="78" y="512.65" fill="#102B53" font-family="Arial" font-size="39" font-weight="400" text-anchor="start" letter-spacing="0">Sistem, doğru cevabı temsil eden</text>
+<text x="78" y="565.3" fill="#102B53" font-family="Arial" font-size="39" font-weight="400" text-anchor="start" letter-spacing="0">daha kararlı yapıya yöneliyor.</text>
+<text x="78" y="717" fill="#102B53" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" letter-spacing="1">DNA PARÇALARI</text>
+<rect x="170" y="775" width="110" height="65" rx="8" fill="#64B8F7" opacity="1"/>
+<line x1="225" y1="859" x2="225" y2="899" stroke="#102B53" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+<path d="M 215 888 L 225 899 L 235 888" fill="none" opacity="1" stroke="#102B53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="390" y="745" width="110" height="65" rx="8" fill="#BBDCF9" opacity="1"/>
+<line x1="445" y1="829" x2="445" y2="899" stroke="#102B53" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+<path d="M 435 888 L 445 899 L 455 888" fill="none" opacity="1" stroke="#102B53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="610" y="794" width="110" height="65" rx="8" fill="#64B8F7" opacity="1"/>
+<line x1="665" y1="878" x2="665" y2="899" stroke="#102B53" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+<path d="M 655 888 L 665 899 L 675 888" fill="none" opacity="1" stroke="#102B53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="830" y="746" width="110" height="65" rx="8" fill="#BBDCF9" opacity="1"/>
+<line x1="885" y1="830" x2="885" y2="899" stroke="#102B53" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+<path d="M 875 888 L 885 899 L 895 888" fill="none" opacity="1" stroke="#102B53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="120" y1="1000" x2="964" y2="1000" stroke="#102B53" stroke-width="9" opacity="1" stroke-linecap="round"/>
+<rect x="170" y="918" width="110" height="65" rx="8" fill="#64B8F7" opacity="1"/>
+<line x1="225" y1="983" x2="225" y2="1000" stroke="#102B53" stroke-width="7" opacity="1" stroke-linecap="round"/>
+<rect x="390" y="918" width="110" height="65" rx="8" fill="#BBDCF9" opacity="1"/>
+<line x1="445" y1="983" x2="445" y2="1000" stroke="#102B53" stroke-width="7" opacity="1" stroke-linecap="round"/>
+<rect x="610" y="918" width="110" height="65" rx="8" fill="#64B8F7" opacity="1"/>
+<line x1="665" y1="983" x2="665" y2="1000" stroke="#102B53" stroke-width="7" opacity="1" stroke-linecap="round"/>
+<rect x="830" y="918" width="110" height="65" rx="8" fill="#BBDCF9" opacity="1"/>
+<line x1="885" y1="983" x2="885" y2="1000" stroke="#102B53" stroke-width="7" opacity="1" stroke-linecap="round"/>
+<text x="78" y="1067" fill="#102B53" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" letter-spacing="1">DNA İSKELETİ</text>
+<text x="78" y="1183" fill="#102B53" font-family="Arial" font-size="25" font-weight="400" text-anchor="start" letter-spacing="0">Basitleştirilmiş gösterim</text>
+</svg>

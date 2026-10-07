@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350"><rect width="1080" height="1350" fill="#EFF6FF"/>
+<text x="78" y="99" fill="#102B53" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" letter-spacing="2">BİLİM / TEKNOLOJİ</text>
+<text x="1002" y="99" fill="#102B53" font-family="Arial" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">07 / 09</text>
+<line x1="78" y1="132" x2="1002" y2="132" stroke="#102B53" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+<text x="78" y="1262" fill="#102B53" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" letter-spacing="1">DNA BİLGİSAYARI</text>
+<text x="1002" y="1262" fill="#102B53" font-family="Arial" font-size="23" font-weight="700" text-anchor="end" letter-spacing="1">KAYDIR  →</text>
+<rect x="78" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="182" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="286" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="390" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="494" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="598" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="702" y="1292" width="92" height="5" rx="0" fill="#64B8F7" opacity="1"/>
+<rect x="806" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<rect x="910" y="1292" width="92" height="5" rx="0" fill="#102B53" opacity="0.18"/>
+<text x="78" y="244" fill="#102B53" font-family="Arial" font-size="96" font-weight="700" text-anchor="start" letter-spacing="0">Hızlı mı?</text>
+<text x="78" y="347" fill="#102B53" font-family="Arial" font-size="96" font-weight="700" text-anchor="start" letter-spacing="0">Henüz değil.</text>
+<text x="78" y="510" fill="#102B53" font-family="Arial" font-size="26" font-weight="700" text-anchor="start" letter-spacing="1">KÜÇÜK İŞLEMLER</text>
+<text x="78" y="617" fill="#102B53" font-family="Arial" font-size="91" font-weight="700" text-anchor="start" letter-spacing="0">~30 saniye</text>
+<line x1="78" y1="672" x2="1002" y2="672" stroke="#102B53" stroke-width="1" opacity="0.25" stroke-linecap="round"/>
+<text x="78" y="759" fill="#102B53" font-family="Arial" font-size="26" font-weight="700" text-anchor="start" letter-spacing="1">DAHA BÜYÜK ÖRNEKLER</text>
+<text x="78" y="868" fill="#246BAC" font-family="Arial" font-size="89" font-weight="700" text-anchor="start" letter-spacing="0">14 saate kadar</text>
+<text x="78" y="1035" fill="#102B53" font-family="Arial" font-size="47" font-weight="700" text-anchor="start" letter-spacing="0">Telefon işlemcilerinden</text>
+<text x="78" y="1097" fill="#102B53" font-family="Arial" font-size="47" font-weight="700" text-anchor="start" letter-spacing="0">çok daha yavaş.</text>
+<text x="78" y="1183" fill="#102B53" font-family="Arial" font-size="27" font-weight="400" text-anchor="start" letter-spacing="0">Süre, yapılan işleme ve deney koşullarına bağlı.</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350"><rect width="1080" height="1350" fill="#102B53"/>
+<text x="78" y="99" fill="#EFF6FF" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" letter-spacing="2">BİLİM / TEKNOLOJİ</text>
+<text x="1002" y="99" fill="#EFF6FF" font-family="Arial" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">05 / 09</text>
+<line x1="78" y1="132" x2="1002" y2="132" stroke="#EFF6FF" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+<text x="78" y="1262" fill="#EFF6FF" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" letter-spacing="1">DNA BİLGİSAYARI</text>
+<text x="1002" y="1262" fill="#EFF6FF" font-family="Arial" font-size="23" font-weight="700" text-anchor="end" letter-spacing="1">KAYDIR  →</text>
+<rect x="78" y="1292" width="92" height="5" rx="0" fill="#EFF6FF" opacity="0.18"/>
+<rect x="182" y="1292" width="92" height="5" rx="0" fill="#EFF6FF" opacity="0.18"/>
+<rect x="286" y="1292" width="92" height="5" rx="0" fill="#EFF6FF" opacity="0.18"/>
+<rect x="390" y="1292" width="92" height="5" rx="0" fill="#EFF6FF" opacity="0.18"/>
+<rect x="494" y="1292" width="92" height="5" rx="0" fill="#64B8F7" opacity="1"/>
+<rect x="598" y="1292" width="92" height="5" rx="0" fill="#EFF6FF" opacity="0.18"/>
+<rect x="702" y="1292" width="92" height="5" rx="0" fill="#EFF6FF" opacity="0.18"/>
+<rect x="806" y="1292" width="92" height="5" rx="0" fill="#EFF6FF" opacity="0.18"/>
+<rect x="910" y="1292" width="92" height="5" rx="0" fill="#EFF6FF" opacity="0.18"/>
+<text x="78" y="244" fill="#EFF6FF" font-family="Arial" font-size="88" font-weight="700" text-anchor="start" letter-spacing="0">Sürekli elektrik</text>
+<text x="78" y="347" fill="#64B8F7" font-family="Arial" font-size="88" font-weight="700" text-anchor="start" letter-spacing="0">akışı gerekmiyor.</text>
+<text x="78" y="460.0" fill="#EFF6FF" font-family="Arial" font-size="40" font-weight="400" text-anchor="start" letter-spacing="0">Karışım önce ısıtılıp soğutuluyor.</text>
+<text x="78" y="514.0" fill="#EFF6FF" font-family="Arial" font-size="40" font-weight="400" text-anchor="start" letter-spacing="0">Ardından moleküllerin etkileşimi</text>
+<text x="78" y="568.0" fill="#EFF6FF" font-family="Arial" font-size="40" font-weight="400" text-anchor="start" letter-spacing="0">hesaplamayı ilerletiyor.</text>
+<text x="78" y="760" fill="#EFF6FF" font-family="Arial" font-size="26" font-weight="700" text-anchor="start" letter-spacing="1">ISIT</text>
+<text x="489" y="760" fill="#EFF6FF" font-family="Arial" font-size="26" font-weight="700" text-anchor="start" letter-spacing="1">SOĞUT</text>
+<text x="1002" y="760" fill="#EFF6FF" font-family="Arial" font-size="26" font-weight="700" text-anchor="end" letter-spacing="1">HESAPLA</text>
+<line x1="99" y1="849" x2="983" y2="849" stroke="#EFF6FF" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+<circle cx="114" cy="849" r="24" fill="#64B8F7" opacity="1"/>
+<circle cx="540" cy="849" r="24" fill="#BBDCF9" opacity="1"/>
+<circle cx="966" cy="849" r="24" fill="#EFF6FF" opacity="1"/>
+<path d="M 103 922 L 286 922 L 520 1020 L 693 1020" fill="none" opacity="1" stroke="#64B8F7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 794 944 L 835 985 L 922 898" fill="none" opacity="1" stroke="#BBDCF9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="78" y="1165" fill="#64B8F7" font-family="Arial" font-size="38" font-weight="700" text-anchor="start" letter-spacing="0">Bu, “sıfır enerji” demek değil.</text>
+</svg>
