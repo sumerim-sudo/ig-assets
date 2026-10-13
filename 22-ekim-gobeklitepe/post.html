@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:"CG";src:url("../fonts/Cormorant.ttf");font-weight:300 700}
+@font-face{font-family:"CZ";src:url("../fonts/Cinzel.ttf");font-weight:400 900}
+@font-face{font-family:"MR";src:url("../fonts/Manrope.ttf");font-weight:200 800}
+:root{--light:#D9E0E8;--dark:#162238;--ink:#111827;--gold:#D9A441;--gold2:#9A6B12;--green:#4E7A6A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0b1120;font-family:"MR",sans-serif;-webkit-font-smoothing:antialiased}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;margin:0 auto 20px;padding:150px 125px 112px;display:flex;flex-direction:column;color:var(--ink);background:var(--light)}
+.slide.dark{color:#E8EDF3;background:var(--dark)}
+.slide>.bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hd,.ft{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:5;font-size:21px;font-weight:600;letter-spacing:.04em}
+.ft{margin-top:auto;font-size:19px;font-weight:500}
+.hd span,.ft span{background:rgba(217,224,232,.9);color:var(--dark);padding:7px 16px;border-radius:22px}
+.dark .hd span,.dark .ft span{background:rgba(22,34,56,.88);color:#E8EDF3;border:1px solid rgba(217,164,65,.35)}
+.hd span:empty,.ft span:empty{display:none}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:30px;position:relative;z-index:4}
+.kick{font-family:"CZ";font-weight:700;font-size:26px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+.dark .kick{color:var(--gold)}
+h1{font-family:"CG";font-weight:700;font-size:100px;line-height:.95;color:#F3F5F8}
+h1 em,h2 em{font-style:italic;font-weight:600;color:var(--gold)}
+h2{font-family:"CG";font-weight:700;font-size:96px;line-height:.98;color:var(--dark)}
+.dark h2{color:#F3F5F8}
+h2 em{color:var(--gold2)} .dark h2 em{color:var(--gold)}
+p{font-size:31px;line-height:1.45;font-weight:500}
+.dark p{color:#DCE3EC}
+p.lead{font-size:34px}
+.big{font-family:"CG";font-weight:700;font-size:200px;line-height:1;font-variant-numeric:lining-nums;color:var(--gold2)}
+.dark .big{color:var(--gold)}
+.box{background:var(--dark);color:#E8EDF3;padding:30px 36px;border-radius:6px;border-left:8px solid var(--gold)}
+.box p{color:#E8EDF3}
+.dark .box{background:rgba(217,164,65,.12);border:1px solid rgba(217,164,65,.5);border-left:8px solid var(--gold)}
+.pill{display:inline-flex;align-items:center;border:2.5px solid currentColor;border-radius:40px;padding:15px 34px;font-size:26px;font-weight:700}
+.pill.fill{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+.pills{display:flex;gap:16px;flex-wrap:wrap}
+.tl{display:flex;flex-direction:column;gap:0}
+.tl .r{display:flex;gap:28px;align-items:baseline;padding:20px 0;border-bottom:2px solid rgba(22,34,56,.18)}
+.tl .r:last-child{border:0}
+.tl b{font-variant-numeric:lining-nums;font-family:"CG";font-weight:700;font-size:56px;color:var(--dark);width:330px;flex:none;line-height:1}
+.tl span{font-size:29px;font-weight:600}
+.veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(22,34,56,.9) 0%,rgba(22,34,56,.75) 45%,rgba(22,34,56,.35) 62%,rgba(22,34,56,0) 75%)}
+</style>
+</head>
+<body>
+<section class="slide dark cover"><img class="bgimg" src="bg/1.jpg"><div class="veil"></div><div class="hd"><span>@sumerolog</span><span>Taş Tepeler · 1</span></div><div class="body" style="justify-content:flex-start;padding-top:10px;gap:28px">
+<span class="kick">Şanlıurfa · MÖ 9600</span>
+<h1 style="font-size:92px">Yazıdan, tekerlekten, şehirden önce: <em>tapınak.</em></h1>
+<p class="lead" style="max-width:780px;color:#E3E9F1">Göbeklitepe'yi tarım bilmeyen avcı-toplayıcılar dikti. Sümerlerin ilk yazılı tabletlerinden 6.000 yıldan fazla önce.</p>
+<div class="pills"><span class="pill fill">Kaydır →</span></div></div><div class="ft"><span></span><span>1 / 9</span></div></section>
+<section class="slide dark"><img class="bgimg" src="bg/2.jpg"><div class="hd"><span>@sumerolog</span><span>Ne zaman?</span></div><div class="body">
+<span class="kick">Ne zaman, kim?</span>
+<div class="big">MÖ 9600</div>
+<p class="lead">Göbeklitepe MÖ 9600 ile 8200 arasında inşa edildi. Yapanlar henüz ekip biçmeyen, avlanarak ve toplayarak yaşayan topluluklardı.</p>
+<div class="box"><p>2018'den beri UNESCO Dünya Mirası listesinde.</p></div></div><div class="ft"><span>Kaynak: UNESCO · Britannica</span><span>2 / 9</span></div></section>
+<section class="slide "><img class="bgimg" src="bg/3.jpg"><div class="hd"><span>@sumerolog</span><span>Zaman ölçeği</span></div><div class="body">
+<h2>Zamanı bir de <em>böyle</em> düşün</h2>
+<div class="tl">
+<div class="r"><b>MÖ 9600</b><span>Göbeklitepe'nin ilk yapıları</span></div>
+<div class="r"><b>MÖ 3100</b><span>Sümer'de kil tabletler</span></div>
+<div class="r"><b>2026</b><span>Bugün</span></div></div>
+<p>Göbeklitepe ile ilk Sümer tabletleri arasındaki süre, o tabletlerle bizim aramızdaki süreden daha uzun.</p></div><div class="ft"><span>Kaynak: UNESCO · Britannica</span><span>3 / 9</span></div></section>
+<section class="slide "><img class="bgimg" src="bg/4.jpg"><div class="hd"><span>@sumerolog</span><span>Sütunlar</span></div><div class="body" style="max-width:640px;justify-content:flex-start;padding-top:40px">
+<h2>T biçimli <em>taşlar</em></h2>
+<div class="big">5,5 m</div>
+<p>Sütunlar hemen yanındaki kayalık düzlükten kesilmiş kireçtaşı. En yüksekleri 5,5 metreyi buluyor.</p>
+<p>Bazılarının gövdesinde kemer ve peştamal kabartması var. Taşlar insan bedeni gibi giydirilmiş.</p></div><div class="ft"><span>Kaynak: UNESCO · DAI</span><span>4 / 9</span></div></section>
+<section class="slide dark"><img class="bgimg" src="bg/5.jpg"><div class="hd"><span>@sumerolog</span><span>Kabartmalar</span></div><div class="body">
+<h2>Taştaki <em>hayvanlar</em></h2>
+<p class="lead">Kabartmalarda çoğunlukla yaban hayvanları var: tilki, akbaba ve başka kuşlar, yırtıcılar, örümcekler.</p>
+<div class="box"><p>Kazı ekibine göre bu hayvanlar bir tür koruyucu ya da bekçi rolünde olabilir.</p></div></div><div class="ft"><span>Kaynak: DAI · Britannica</span><span>5 / 9</span></div></section>
+<section class="slide "><img class="bgimg" src="bg/6.jpg"><div class="hd"><span>@sumerolog</span><span>Keşif</span></div><div class="body" style="max-width:780px">
+<h2>30 yıla yakın <em>gözden kaçtı</em></h2>
+<p class="lead">1960'larda İstanbul ve Chicago üniversitelerinden bir araştırma ekibi tepedeki çakmaktaşlarını not etti. Alan o zaman ortaçağ mezarlığı sanıldı.</p>
+<div class="box"><p>1994'te Alman Arkeoloji Enstitüsü'nden Klaus Schmidt anıtsal yapıları fark etti. Kazı ertesi yıl başladı.</p></div></div><div class="ft"><span>Kaynak: DAI · Britannica</span><span>6 / 9</span></div></section>
+<section class="slide dark"><img class="bgimg" src="bg/7.jpg"><div class="hd"><span>@sumerolog</span><span>Bilmece</span></div><div class="body">
+<h2>Asıl <em>bilmece</em></h2>
+<p class="lead">Uzun süre şu sıra doğru kabul edildi: önce tarım, sonra yerleşik hayat, en son anıtlar. Göbeklitepe bu sırayı bozuyor. Bu taşları dikmek için insanların önce bir arada yaşamaya başlaması gerekmiş olabilir.</p>
+<div class="box"><p><b>Tapınak mı?</b> Yeni kazılarda ocaklar, sarnıçlar ve mezarlar da çıktı. Kazı ekibi burayı artık güçlü ritüel yönü olan bir yerleşim olarak görüyor.</p></div></div><div class="ft"><span>Kaynak: DAI · UNESCO · Britannica</span><span>7 / 9</span></div></section>
+<section class="slide "><img class="bgimg" src="bg/8.jpg"><div class="hd"><span>@sumerolog</span><span>Taş Tepeler</span></div><div class="body" style="max-width:640px">
+<h2>Göbeklitepe <em>yalnız</em> değil</h2>
+<p class="lead">Şanlıurfa çevresinde aynı döneme ait bir dizi tepe "Taş Tepeler" adıyla kazılıyor. Karahantepe bunların en bilineni.</p>
+<div class="box"><p>Karahantepe'de bir yapının içinde sütunlarla birlikte bir insan başı heykeli bulundu.</p></div></div><div class="ft"><span>Kaynak: Archaeology · Habertürk</span><span>8 / 9</span></div></section>
+<section class="slide dark cta"><img class="bgimg" src="bg/9.jpg"><div class="hd"><span>@sumerolog</span><span>Son soru</span></div><div class="body" style="justify-content:flex-start;padding-top:10px;gap:28px">
+<h2 style="font-size:120px">Gittin <em>mi?</em></h2>
+<p class="lead">Yoruma tek kelime yaz: <b>Evet</b> ya da <b>Hayır</b>.</p>
+<p>Gitmek isteyen birini tanıyorsan bu gönderiyi ona gönder.</p>
+<div class="pills"><span class="pill fill">Evet / Hayır</span><span class="pill" style="color:#F3F5F8">Gönder ↗</span></div></div><div class="ft"><span>Görseller yapay zekâ ile üretilmiştir</span><span>9 / 9</span></div></section>
+</body>
+</html>
