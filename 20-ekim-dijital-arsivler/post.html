@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:"PF";src:url("../fonts/PlayfairDisplay.ttf") format("truetype");font-weight:400 900}
+@font-face{font-family:"PF";src:url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype");font-weight:400 900;font-style:italic}
+@font-face{font-family:"Script";src:url("../fonts/DancingScript.ttf") format("truetype");font-weight:400 700}
+@font-face{font-family:"Body";src:url("../fonts/Poppins-Regular.ttf");font-weight:400}
+@font-face{font-family:"Body";src:url("../fonts/Poppins-Medium.ttf");font-weight:500}
+@font-face{font-family:"Body";src:url("../fonts/Poppins-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"Body";src:url("../fonts/Poppins-Bold.ttf");font-weight:700}
+:root{--cream:#F4EEDC;--brick:#95301F;--brick2:#7C2617;--ink:#2E1C14;--tan:#E2D5B8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#4A2C1E;font-family:"Body",sans-serif;color:var(--brick);-webkit-font-smoothing:antialiased}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--cream);margin:0 auto 20px;padding:66px 78px 72px;display:flex;flex-direction:column}
+.slide.brick{background:var(--brick);color:var(--cream)}
+.hd{display:flex;justify-content:space-between;align-items:center;font-size:23px;font-weight:500;letter-spacing:.02em;position:relative;z-index:5}
+.brick .hd{color:var(--cream);opacity:.9}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:34px;position:relative;z-index:4}
+.ft{display:flex;justify-content:space-between;align-items:flex-end;font-size:21px;font-weight:500;opacity:.72;position:relative;z-index:5}
+h1{font-family:"PF";font-weight:700;font-size:92px;line-height:1.0}
+h2{font-family:"PF";font-weight:700;font-size:70px;line-height:1.06}
+.sc{font-family:"Script";font-weight:700;line-height:1.0;display:inline-block}
+h1 .sc{font-size:100px}
+h2 .sc{font-size:76px}
+p{font-size:31px;line-height:1.45;color:var(--ink)}
+.brick p{color:#F6E6DC}
+p.lead{font-size:35px;line-height:1.4}
+.pill{display:inline-flex;align-items:center;justify-content:center;border:2.5px solid currentColor;border-radius:50%;padding:17px 40px;font-size:26px;font-weight:500;white-space:nowrap}
+.pill.fill{background:var(--brick);color:var(--cream);border-color:var(--brick)}
+.brick .pill.fill{background:var(--cream);color:var(--brick);border-color:var(--cream)}
+.pills{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.photo{overflow:hidden;background:var(--tan);position:relative;flex:none}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.row{display:flex;gap:30px;align-items:center}
+.box{background:var(--brick);color:var(--cream);padding:34px 40px}
+.box p{color:var(--cream)}
+.site{display:flex;gap:26px;align-items:flex-start;border-bottom:1.5px solid rgba(149,48,31,.25);padding-bottom:28px}
+.site:last-child{border:0;padding-bottom:0}
+.brick .site{border-color:rgba(244,238,220,.3)}
+.site .n{font-family:"PF";font-weight:700;font-size:64px;line-height:.9;opacity:.55;width:84px;flex:none}
+.site .c{flex:1;display:flex;flex-direction:column;gap:10px}
+.site h3{font-family:"PF";font-weight:700;font-size:48px;line-height:1.08}
+.site .u{align-self:flex-start;font-size:25px;font-weight:600;letter-spacing:.01em;background:var(--tan);color:var(--brick2);padding:6px 16px;border-radius:30px}
+.brick .site .u{background:rgba(244,238,220,.16);color:var(--cream)}
+.site p{font-size:30px;line-height:1.42}
+.spark{position:absolute;z-index:3}
+.deco{position:absolute;z-index:1}
+.tip{display:flex;gap:22px;align-items:flex-start}
+.tip p{font-size:33px}
+.tip b.k{font-family:"PF";font-size:50px;line-height:1;flex:none;width:60px}
+</style>
+</head>
+<body>
+<section class="slide"><svg class="spark" style="right:120px;top:140px" width="84" height="84" viewBox="0 0 40 40"><path d="M20 0 C21.5 15 25 18.5 40 20 C25 21.5 21.5 25 20 40 C18.5 25 15 21.5 0 20 C15 18.5 18.5 15 20 0Z" fill="#95301F"/></svg>
+<div class="deco" style="left:0;bottom:0;width:260px;height:260px;background:var(--tan);border-radius:0 260px 0 0"></div>
+<div class="hd"><span>@sumerolog</span><span>Okuma rehberi · 2026</span></div>
+<div class="body" style="gap:34px">
+<h1>Bu 10 sitede<br>binlerce kitap ve dergi<br><span class="sc">ücretsiz.</span></h1>
+<div class="row" style="gap:34px;align-items:flex-end">
+<div style="flex:1;display:flex;flex-direction:column;gap:26px"><p class="lead">El yazmasından eski gazeteye, akademik makaleden divana. Hepsi Türkçe, hepsi tek tık uzağında.</p>
+<div class="pills"><span class="pill fill">Kaydır →</span><span class="pill">Kaydet</span></div></div>
+<div class="photo" style="width:360px;height:500px;border-radius:180px 180px 14px 14px"><img src="img/1.jpg"></div>
+</div></div><div class="ft"><span>Kaynak: Kurumların resmî siteleri · 13 Ekim 2026'da kontrol edildi</span><span>1 / 8</span></div></section>
+<section class="slide"><div class="deco" style="right:0;top:0;width:250px;height:250px;background:var(--tan);border-radius:0 0 0 250px"></div>
+<div class="hd"><span>@sumerolog</span><span>Ulusal arşivler</span></div>
+<div class="body" style="gap:30px">
+<div class="row" style="gap:30px;align-items:flex-end"><h2 style="flex:1">Önce <span class="sc">büyükler</span></h2>
+<div class="photo" style="width:250px;height:330px;border-radius:125px 125px 12px 12px"><img src="img/2.jpg"></div></div>
+<div class="site"><span class="n">01</span><div class="c"><h3>Milli Kütüphane Dijital Kütüphane</h3><span class="u">dijital-kutuphane.mkutup.gov.tr</span><p>El yazmaları, nadir eserler, eski gazete ve dergiler; yüksek çözünürlükte.</p></div></div>
+<div class="site"><span class="n">02</span><div class="c"><h3>DergiPark</h3><span class="u">dergipark.org.tr</span><p>Türkiye'de yayımlanan binlerce akademik derginin makaleleri. Açık erişim, PDF olarak.</p></div></div>
+</div><div class="ft"><span>Kaynak: Kurumların resmî siteleri · 13 Ekim 2026'da kontrol edildi</span><span>2 / 8</span></div></section>
+<section class="slide"><svg class="spark" style="right:130px;top:170px" width="70" height="70" viewBox="0 0 40 40"><path d="M20 0 C21.5 15 25 18.5 40 20 C25 21.5 21.5 25 20 40 C18.5 25 15 21.5 0 20 C15 18.5 18.5 15 20 0Z" fill="#95301F"/></svg>
+<div class="deco" style="left:0;bottom:0;width:240px;height:240px;background:var(--tan);border-radius:0 240px 0 0"></div>
+<div class="hd"><span>@sumerolog</span><span>Kitap ve yazma</span></div>
+<div class="body" style="gap:34px">
+<h2 style="font-size:82px">Divanlar ve <span class="sc">yazmalar</span></h2>
+<div class="site"><span class="n">03</span><div class="c"><h3>Türkiye Yazma Eserler Kurumu</h3><span class="u">yek.gov.tr</span><p>Yüz binlerce yazma ve nadir eser ekranda incelenebiliyor. İndirmek için ücretsiz üyelik yeterli.</p></div></div>
+<div class="site"><span class="n">04</span><div class="c"><h3>Kültür ve Turizm Bakanlığı e-Kitap</h3><span class="u">ekitap.ktb.gov.tr</span><p>Bakanlık yayınları ücretsiz PDF: divanlar, halk bilimi, tarih ve sanat kitapları.</p></div></div>
+</div><div class="ft"><span>Kaynak: Kurumların resmî siteleri · 13 Ekim 2026'da kontrol edildi</span><span>3 / 8</span></div></section>
+<section class="slide"><div class="deco" style="right:0;bottom:0;width:250px;height:250px;background:var(--tan);border-radius:250px 0 0 0"></div>
+<div class="hd"><span>@sumerolog</span><span>Şehir ve görsel hafıza</span></div>
+<div class="body" style="gap:30px">
+<div class="row" style="gap:30px;align-items:flex-end"><h2 style="flex:1">Eski haritalar, <span class="sc">kartpostallar</span></h2>
+<div class="photo" style="width:250px;height:330px;border-radius:14px"><img src="img/3.jpg"></div></div>
+<div class="site"><span class="n">05</span><div class="c"><h3>İBB Atatürk Kitaplığı</h3><span class="u">ataturkkitapligi.ibb.gov.tr</span><p>İstanbul'un hafızası: yazmalar, eski haritalar, kartpostallar ve fotoğraflar.</p></div></div>
+<div class="site"><span class="n">06</span><div class="c"><h3>Salt Araştırma</h3><span class="u">archives.saltresearch.org</span><p>Mimarlık, fotoğraf ve kartpostal arşivleri; sanatçıların ve kurumların belgeleri.</p></div></div>
+</div><div class="ft"><span>Kaynak: Kurumların resmî siteleri · 13 Ekim 2026'da kontrol edildi</span><span>4 / 8</span></div></section>
+<section class="slide brick"><svg class="spark" style="right:120px;top:150px" width="76" height="76" viewBox="0 0 40 40"><path d="M20 0 C21.5 15 25 18.5 40 20 C25 21.5 21.5 25 20 40 C18.5 25 15 21.5 0 20 C15 18.5 18.5 15 20 0Z" fill="#F4EEDC"/></svg>
+<div class="hd"><span>@sumerolog</span><span>Tarih meraklısına</span></div>
+<div class="body" style="gap:34px">
+<h2 style="color:var(--cream)">Osmanlı'ya<br><span class="sc">açılan kapı</span></h2>
+<div class="site"><span class="n">07</span><div class="c"><h3>İSAM Kütüphanesi</h3><span class="u">kutuphane.isam.org.tr</span><p>Tarih, edebiyat ve ilahiyat makale veri tabanları; Osmanlıca makaleler dahil.</p></div></div>
+<div class="site"><span class="n">08</span><div class="c"><h3>IRCICA Kütüphanesi</h3><span class="u">library.ircica.org</span><p>Farabi dijital kütüphanesi: salnameler, Takvim-i Vekayi, seyahatnameler.</p></div></div>
+</div><div class="ft" style="color:var(--cream)"><span>Kaynak: Kurumların resmî siteleri · 13 Ekim 2026'da kontrol edildi</span><span>5 / 8</span></div></section>
+<section class="slide"><div class="deco" style="left:0;top:0;width:240px;height:240px;background:var(--tan);border-radius:0 0 240px 0"></div>
+<div class="hd"><span>@sumerolog</span><span>Bir de bunlar</span></div>
+<div class="body" style="gap:30px">
+<div class="row" style="gap:30px;align-items:flex-end"><h2 style="flex:1">Az bilinen <span class="sc">iki hazine</span></h2>
+<div class="photo" style="width:250px;height:330px;border-radius:125px 125px 12px 12px"><img src="img/4.jpg"></div></div>
+<div class="site"><span class="n">09</span><div class="c"><h3>TBMM Kütüphanesi Açık Erişim</h3><span class="u">acikerisim.tbmm.gov.tr</span><p>Kitap, harita, gazete, dergi ve tezler; Meclis'in araştırma raporları.</p></div></div>
+<div class="site"><span class="n">10</span><div class="c"><h3>Vikikaynak</h3><span class="u">tr.wikisource.org</span><p>Gönüllülerin dijitalleştirdiği, telifi serbest Türkçe metinler. Tarayıcıda oku.</p></div></div>
+</div><div class="ft"><span>Kaynak: Kurumların resmî siteleri · 13 Ekim 2026'da kontrol edildi</span><span>6 / 8</span></div></section>
+<section class="slide"><svg class="spark" style="right:130px;top:160px" width="80" height="80" viewBox="0 0 40 40"><path d="M20 0 C21.5 15 25 18.5 40 20 C25 21.5 21.5 25 20 40 C18.5 25 15 21.5 0 20 C15 18.5 18.5 15 20 0Z" fill="#95301F"/></svg>
+<div class="deco" style="right:0;bottom:0;width:260px;height:260px;background:var(--tan);border-radius:260px 0 0 0"></div>
+<div class="hd"><span>@sumerolog</span><span>Nasıl kullanılır?</span></div>
+<div class="body" style="gap:34px">
+<h2 style="font-size:82px">Üç küçük <span class="sc">ipucu</span></h2>
+<div class="tip"><b class="k">1</b><p><b>Detaylı aramayı kullan.</b> Yazar, yıl ve tür süzgeçleri binlerce sonucu dakikalar içinde daraltır.</p></div>
+<div class="tip"><b class="k">2</b><p><b>Üyelik ücretsiz.</b> Bazı sitelerde okumak serbest, indirmek için yalnızca ücretsiz kayıt gerekir.</p></div>
+<div class="tip"><b class="k">3</b><p><b>Künyeyi not et.</b> Ödevde ya da yazıda kullanacaksan eser adı, yıl ve arşiv adını kaydet.</p></div>
+<div class="box"><p style="font-size:29px">Linklerin hepsi <b>13 Ekim 2026'da</b> tek tek açılıp kontrol edildi.</p></div>
+</div><div class="ft"><span>Kaynak: Kurumların resmî siteleri · 13 Ekim 2026'da kontrol edildi</span><span>7 / 8</span></div></section>
+<section class="slide brick"><svg class="spark" style="right:120px;top:150px" width="84" height="84" viewBox="0 0 40 40"><path d="M20 0 C21.5 15 25 18.5 40 20 C25 21.5 21.5 25 20 40 C18.5 25 15 21.5 0 20 C15 18.5 18.5 15 20 0Z" fill="#F4EEDC"/></svg>
+<div class="hd"><span>@sumerolog</span><span>Son söz</span></div>
+<div class="body" style="gap:34px">
+<h2 style="color:var(--cream)">Kütüphane artık<br><span class="sc">cebinde.</span></h2>
+<div class="row" style="gap:34px;align-items:flex-end">
+<div style="flex:1;display:flex;flex-direction:column;gap:28px"><p class="lead">Bu listeyi <b>kaydet</b>, lazım olduğunda geri dön. Bir de kitapsever bir arkadaşına <b>gönder</b>; ona iyilik yapmış olursun.</p>
+<div class="pills"><span class="pill fill">Kaydet</span><span class="pill">Gönder ↗</span></div></div>
+<div class="photo" style="width:320px;height:450px;border-radius:160px 160px 14px 14px"><img src="img/5.jpg"></div>
+</div></div><div class="ft" style="color:var(--cream)"><span>Görseller yapay zekâ ile üretilmiştir</span><span>8 / 8</span></div></section>
+</body>
+</html>
