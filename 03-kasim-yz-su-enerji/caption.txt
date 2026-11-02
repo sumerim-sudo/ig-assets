@@ -1,0 +1,13 @@
+Yapay zekâ su tüketimi: ChatGPT ya da Gemini'ye sorulan tek bir soru ne kadar su ve elektrik harcıyor?
+
+"Her soru bir şişe su" cümlesi 2023'teki bir tahminden çıktı. O hesap 20 ile 50 soruluk bir sohbeti kapsıyordu ve elektrik üretiminde harcanan suyu da sayıyordu.
+
+Google'ın Ağustos 2025 raporuna göre ortanca bir Gemini metin sorusu 0,24 Wh enerji ve 0,26 ml su harcıyor, yani yaklaşık 5 damla. OpenAI'ın ChatGPT için açıkladığı rakam 0,34 Wh ve yaklaşık 0,32 ml. Bu ölçümlere model eğitimi, görsel ve video üretimi girmiyor. Bağımsız bir denetimden de geçmediler.
+
+Toplamda tablo büyüyor. Uluslararası Enerji Ajansı'na göre veri merkezleri 2024'te 415 TWh elektrik kullandı. 2030'da bu rakam 945 TWh civarına çıkabilir, Japonya'nın bugünkü toplam tüketiminden biraz fazla.
+
+Tahminin neydi? Yaz. Kaydet, merak eden birine gönder.
+
+Kaynaklar: Google teknik raporu (Ağustos 2025), Sam Altman blog yazısı (Haziran 2025), UC Riverside ve UT Arlington çalışması (2023), Uluslararası Enerji Ajansı "Energy and AI" (2025).
+
+#yapayzeka #chatgpt #teknoloji #bilim #iklim
