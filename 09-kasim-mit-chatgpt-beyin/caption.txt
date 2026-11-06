@@ -1,0 +1,13 @@
+ChatGPT beyni tembelleştirir mi? MIT Media Lab'in yapay zekâ ve beyin deneyi, EEG sonuçları.
+
+MIT'de 54 üniversite öğrencisi üç gruba ayrıldı: ChatGPT ile yazanlar, arama motoruyla yazanlar ve hiçbir araç kullanmayanlar. Deneme yazarken beyin etkinlikleri EEG ile ölçüldü.
+
+Beyin bölgeleri arasındaki bağlantı en güçlü araçsız grupta, en zayıf ChatGPT grubundaydı. İlk oturumdan sonra ChatGPT grubunun %83'ü kendi denemesinden bir cümleyi doğru aktaramadı; diğer gruplarda bu oran %11.
+
+Çalışmanın sınırları da var: hâlâ ön baskı, hakem değerlendirmesinden geçmedi, örneklem küçük ve yalnızca deneme yazma ölçüldü. Önce kendi başına düşünüp sonra yapay zekâya başvuranlarda bağlantı daha güçlü kaldı; fark aracı nasıl kullandığında.
+
+Ödevde yapay zekâ kullanıyor musun? Evet ya da Hayır yaz. Kaydet, öğrenci bir arkadaşına gönder.
+
+Kaynak: MIT Media Lab, arXiv 2506.08872, Scientific American.
+
+#yapayzeka #chatgpt #eğitim #öğrenci #bilim
