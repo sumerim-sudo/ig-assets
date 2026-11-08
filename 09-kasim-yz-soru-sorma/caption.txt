@@ -1,0 +1,13 @@
+Yapay zekâya nasıl soru sorulur? ChatGPT, Gemini ve Claude için 5 istem (prompt) kuralı
+
+Aynı soruyu iki farklı biçimde sorunca iki farklı cevap alırsın. Google'ın Workspace testlerinde en başarılı istemler ortalama 21 kelimeydi, insanların ilk denemeleri ise çoğunlukla 9 kelimenin altında kalıyordu.
+
+Google, OpenAI ve Anthropic'in istem kılavuzları benzer şeyler öneriyor: yapay zekâya bir rol ver, kimin için ve neden istediğini anlat, örnek göster, cevabın biçimini söyle, bitirmeden önce kontrol etmesini iste. Slaytlarda her kural için fotosentez üzerinden kötü ve iyi bir Türkçe örnek var.
+
+Yapay zekâ yine de yanılabilir, önemli bilgiyi kaynağından doğrula.
+
+Kaydet, yapay zekâyı sık kullanan birine gönder.
+
+Görseller yapay zekâ ile üretilmiştir.
+
+#yapayzeka #chatgpt #prompt #eğitim #gemini
